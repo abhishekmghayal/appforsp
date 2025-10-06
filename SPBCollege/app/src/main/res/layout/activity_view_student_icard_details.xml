@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClerkModule.Icard.ViewStudentICardDetailsActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tv_top_heading_studenticard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="Student I-Card"
+                android:textStyle="bold"
+                android:fontFamily="@font/playfairdisplayvariablefontwght"
+                android:textColor="@color/primaryColor"
+                android:textSize="35dp" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_print_24"
+                android:id="@+id/btn_print_icard"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_270sdp"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/view_icard_studentInfo_card"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/tv_top_heading_studenticard"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="@dimen/_110sdp"
+                        android:layout_height="@dimen/_110sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/profile_layout"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_100sdp"
+                            android:layout_centerHorizontal="true"
+                            app:cardCornerRadius="@dimen/_220sdp"
+                            app:cardBackgroundColor="@color/white">
+
+                            <ImageView
+                                android:id="@+id/view_Icard_student_photo"
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="@dimen/_100sdp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/profile_icon" />
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/tv_icard_name_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/profile_layout"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp"
+                        android:text="Name Of Student :"
+                        />
+
+                    <EditText
+                        android:id="@+id/tv_icard_name"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv_icard_name_title"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Abhishek Manohar Ghayal"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/tv_icard_student_DOB_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_icard_name"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp"
+                        android:text="Date Of Birth :"
+                        />
+
+                    <EditText
+                        android:id="@+id/tv_icard_student_DOB"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv_icard_student_DOB_title"
+                        android:fontFamily="sans-serif-black"
+                        android:layout_marginLeft="20dp"
+                        android:text="20/11/2005"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/tv_icard_student_academic_year_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_icard_student_DOB"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp"
+                        android:text="Academic Year :"
+                        />
+
+                    <EditText
+                        android:id="@+id/tv_icard_student_academic_year"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv_icard_student_academic_year_title"
+                        android:fontFamily="sans-serif-black"
+                        android:layout_marginLeft="20dp"
+                        android:text="2023-24"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_icard_student_generalREGNO_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_icard_student_academic_year"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp"
+                        android:text="Genral Register No. :"
+                        />
+
+                    <EditText
+                        android:id="@+id/tv_icard_student_generalREGNO"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv_icard_student_generalREGNO_title"
+                        android:fontFamily="sans-serif-black"
+                        android:layout_marginLeft="20dp"
+                        android:text="2111620085"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_icard_student_STD_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_icard_student_generalREGNO"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp"
+                        android:text="Standard :"
+                        />
+
+                    <EditText
+                        android:id="@+id/tv_icard_student_STD"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv_icard_student_STD_title"
+                        android:fontFamily="sans-serif-black"
+                        android:layout_marginLeft="20dp"
+                        android:text="3rd year"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_icard_student_address_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_icard_student_STD"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp"
+                        android:text="Student Address :"
+                        />
+
+                    <EditText
+                        android:id="@+id/tv_icard_student_address"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv_icard_student_address_title"
+                        android:fontFamily="sans-serif-black"
+                        android:layout_marginLeft="20dp"
+                        android:text="At Post Pachod Tal.Paithan Dist.Chhatrapti Sambhaji Nagar"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_icard_update"
+                android:layout_below="@id/view_icard_studentInfo_card"
+                android:text="Update"
+                android:textSize="18dp"
+                android:fontFamily="@font/f1"
+                android:backgroundTint="@color/primaryColor"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="45dp"
+                />
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_icard_delete"
+                android:layout_below="@id/view_icard_studentInfo_card"
+                android:text="Delete"
+                android:fontFamily="@font/f1"
+                android:textSize="18dp"
+                android:layout_marginRight="45dp"
+                android:backgroundTint="@color/primaryColor"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

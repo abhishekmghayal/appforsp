@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ClerkModule.Admission.InputingData.Clerk_Admission_Parent_Info_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+            <TextView
+                android:id="@+id/tv_top_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admission Form"
+                android:textStyle="bold"
+                android:fontFamily="@font/playfairdisplayvariablefontwght"
+                android:textColor="@color/primaryColor"
+                android:textSize="@dimen/_27sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_9sdp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tt_admission_Parent_Info_sample"
+                android:text="Parent Information"
+                android:fontFamily="@font/f1"
+                android:padding="@dimen/_13sdp"
+                android:layout_below="@+id/tv_top_heading"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="@dimen/_430sdp"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_admission_Parent_Info_image1"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_below="@+id/tt_admission_Parent_Info_sample"
+                android:src="@drawable/division_line" />
+            <EditText
+                android:id="@+id/et_admission_Parent_Info_pfName"
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_admission_Parent_Info_image1"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:hint="Parent Full Name"
+                android:inputType="text"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_admission_Parent_Info_relationToP"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_admission_Parent_Info_pfName"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:hint="Relation to the student"
+                android:inputType="text"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/et__aS_admission_cast"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_admission_Parent_Info_relationToP"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:hint="Cast "
+                android:inputType="text"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/_430sdp"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_admission_Parent_Info_image8"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_below="@+id/et__aS_admission_cast"
+                android:src="@drawable/division_line" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tt_admission_Parent_Info_minotrity"
+                android:text="Is there a minority?"
+                android:fontFamily="@font/f1"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_13sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_below="@+id/img_admission_Parent_Info_image8"
+                android:textStyle="bold"
+                />
+            <RadioGroup
+                android:id="@+id/rdg_admision_parent_Info_minotrity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_below="@+id/tt_admission_Parent_Info_minotrity">
+
+                <RadioButton
+                    android:id="@+id/radioButtonYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textColor="@color/primaryColor"
+                    android:textColorHint="@color/primaryColor"
+                    android:textSize="@dimen/_12sdp"
+                    android:padding="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButtonNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="@color/primaryColor"
+                    android:textColorHint="@color/primaryColor"
+                    android:textSize="@dimen/_12sdp"
+                    android:padding="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    />
+            </RadioGroup>
+            <Spinner
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/sp_admission_Parent_Info_miniroity"
+                android:layout_below="@+id/tt_admission_Parent_Info_minotrity"
+                android:padding="@dimen/_12sdp"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:entries="@array/miniroity_item"
+                android:textStyle="bold"
+                android:layout_marginRight="@dimen/_13sdp"
+                android:text="Select the Cast"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tt_admission_Parent_Info_Economical"
+                android:text="Is it Economical weaker?"
+                android:fontFamily="@font/f1"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:textStyle="bold"
+                android:layout_below="@+id/rdg_admision_parent_Info_minotrity"
+                />
+
+            <RadioGroup
+                android:id="@+id/rdg_admision_parent_Info_Economical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_below="@+id/tt_admission_Parent_Info_Economical">
+
+                <RadioButton
+                    android:id="@+id/radioButtonEcoYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textColor="@color/primaryColor"
+                    android:textColorHint="@color/primaryColor"
+                    android:textSize="@dimen/_12sdp"
+                    android:padding="@dimen/_12sdp"
+                    android:textStyle="bold"
+                     />
+
+                <RadioButton
+                    android:id="@+id/radioButtonEcoNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="@color/primaryColor"
+                    android:textColorHint="@color/primaryColor"
+                    android:textSize="@dimen/_12sdp"
+                    android:padding="@dimen/_12sdp"
+                    android:textStyle="bold"
+
+                    />
+            </RadioGroup>
+            <ImageView
+                android:layout_width="@dimen/_430sdp"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_admission_Parent_Info_image4"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_below="@+id/rdg_admision_parent_Info_Economical"
+                android:src="@drawable/division_line" />
+            <EditText
+                android:id="@+id/et_admission_Parent_Info_temp_add"
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_below="@+id/img_admission_Parent_Info_image4"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:hint="Temporary address"
+                android:inputType="text|textMultiLine"
+                android:textColor="@color/primaryColor"
+                android:maxLines="3"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/et_admission_Parent_Info_prem_add"
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:maxLines="3"
+                android:layout_below="@+id/et_admission_Parent_Info_temp_add"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:hint="Permanent address"
+                android:inputType="text|textMultiLine"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="@dimen/_430sdp"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_admission_Parent_Info_image5"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_below="@+id/et_admission_Parent_Info_prem_add"
+                android:src="@drawable/division_line" />
+            <EditText
+                android:id="@+id/et_admission_Parent_Info_tele_no"
+                android:layout_width="@dimen/_190sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_admission_Parent_Info_image5"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:hint="Telephone No."
+                android:inputType="number"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/et_admission_Parent_Info_Mobile_no"
+                android:layout_width="@dimen/_190sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_admission_Parent_Info_tele_no"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:hint="Mobile No."
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/et_admission_Parent_Info_Bussiness"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_below="@+id/et_admission_Parent_Info_Mobile_no"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:hint="Business"
+                android:inputType="text|textMultiLine"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:maxLines="2"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/et_admission_Parent_Info_last_income"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_admission_Parent_Info_Bussiness"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:inputType="text"
+                android:hint="Last year income"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="@dimen/_430sdp"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_admission_Parent_Info_image3"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_below="@+id/et_admission_Parent_Info_last_income"
+                android:src="@drawable/division_line" />
+
+            <Button
+                android:id="@+id/btn_std_parent_admission_submit"
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_admission_Parent_Info_image3"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:backgroundTint="@color/primaryColor"
+                android:text="Submit Form" />
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

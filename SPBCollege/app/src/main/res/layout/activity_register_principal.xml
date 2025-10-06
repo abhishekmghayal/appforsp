@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PrincipalModule.RegisterPrincipalActivity">
+
+
+    <EditText
+        android:id="@+id/reg_principal_et_principal_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:inputType="textPersonName"
+        android:hint="Full Name"
+        android:paddingLeft="10dp"
+        android:textColor="@color/primaryColor"
+        android:textColorHint="@color/primaryColor"
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/reg_principal_et_principal_mo_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_principal_et_principal_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:paddingLeft="10dp"
+        android:hint="Mobile No"
+        android:textColor="@color/primaryColor"
+        android:textColorHint="@color/primaryColor"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:maxLength="10"
+        />
+
+    <EditText
+        android:id="@+id/reg_principal_et_principal_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_principal_et_principal_mo_no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:paddingLeft="10dp"
+        android:hint="Email Id"
+        android:textColor="@color/primaryColor"
+        android:textColorHint="@color/primaryColor"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/reg_principal_et_principal_aadhar_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_principal_et_principal_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:paddingLeft="10dp"
+        android:hint="Aadhar No"
+        android:textColor="@color/primaryColor"
+        android:textColorHint="@color/primaryColor"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:maxLength="12"/>
+
+    <EditText
+        android:id="@+id/reg_principal_et_principal_pan_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_principal_et_principal_aadhar_no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:paddingLeft="10dp"
+        android:hint="Pan No"
+        android:textColor="@color/primaryColor"
+        android:textColorHint="@color/primaryColor"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:inputType="textCapCharacters"/>
+
+    <EditText
+        android:id="@+id/reg_principal_et_principal_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_principal_et_principal_pan_no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:paddingLeft="10dp"
+        android:hint="Username"
+        android:textColor="@color/primaryColor"
+        android:textColorHint="@color/primaryColor"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/reg_principal_et_principal_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_principal_et_principal_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:paddingLeft="10dp"
+        android:hint="Password"
+        android:textColor="@color/primaryColor"
+        android:textColorHint="@color/primaryColor"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:inputType="textPassword"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Password"
+        android:id="@+id/reg_principal_chk_show_pass"
+        android:textColor="@color/primaryColor"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginLeft="35dp"
+        android:textSize="15dp"
+        android:textColorHint="@color/primaryColor"
+        android:layout_below="@id/reg_principal_et_principal_password"
+        android:backgroundTint="@color/primaryColor"
+        android:buttonTint="@color/primaryColor"
+        />
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/reg_principal_btn_register"
+        android:layout_below="@id/reg_principal_chk_show_pass"
+        android:text="Add Profile"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/primaryColor"
+        />
+
+
+
+
+</RelativeLayout>

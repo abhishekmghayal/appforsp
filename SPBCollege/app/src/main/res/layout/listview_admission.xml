@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_list_student_admission">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        app:cardCornerRadius="6dp"
+        android:layout_margin="4dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:id="@+id/profile_layout"
+                android:layout_marginLeft="@dimen/_5sdp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="@dimen/_220sdp"
+                    app:cardBackgroundColor="@color/white">
+
+                    <ImageView
+                        android:id="@+id/student_photo"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/profile_icon" />
+
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_admission_list_student_name"
+                android:layout_toRightOf="@id/profile_layout"
+                android:text="Student Name"
+                android:layout_marginLeft="28dp"
+                android:textColor="@color/primaryColor"
+                android:textSize="23dp"
+
+                android:fontFamily="sans-serif-black"
+                android:layout_marginTop="9dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_admission_list_student_birth"
+                android:text="Admission No."
+                android:layout_toRightOf="@id/profile_layout"
+                android:layout_marginLeft="28dp"
+                android:textColor="@color/primaryColor"
+                android:layout_below="@id/tv_admission_list_student_name"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_admission_list_student_add_no_value"
+                android:text="XXXXXXX"
+                android:inputType="text"
+                android:layout_toRightOf="@id/tv_admission_list_student_birth"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/primaryColor"
+                android:layout_below="@id/tv_admission_list_student_name"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_admission_list_student_std"
+                android:text="Std."
+                android:layout_toRightOf="@id/profile_layout"
+                android:layout_marginLeft="28dp"
+                android:textColor="@color/primaryColor"
+                android:layout_below="@id/tv_admission_list_student_birth"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_admission_list_student_stdNo"
+                android:text="XXXXXXX"
+                android:inputType="number"
+                android:layout_toRightOf="@id/tv_admission_list_student_std"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/primaryColor"
+                android:layout_below="@id/tv_admission_list_student_birth"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

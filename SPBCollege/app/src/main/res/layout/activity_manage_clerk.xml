@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrincipalModule.ManageClerkActivity"
+    android:id="@+id/manage_clerk_activity_listview">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fbtn_add_clerk_create_dialog"
+        android:src="@drawable/icon_add"
+        android:tint="@color/primaryColor"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        app:backgroundTint="@color/primaryColor"
+        android:foregroundTint="@color/white"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_view_clerk_list"
+        />
+<!--    tools:listitem="@layout/list_card_view"-->
+
+
+
+</RelativeLayout>

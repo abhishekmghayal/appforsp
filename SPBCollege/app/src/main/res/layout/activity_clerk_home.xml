@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClerkModule.ClerkHomeActivity"
+    android:background="@color/primaryColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/com_lay"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center">
+        
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clerk_logout"
+            android:src="@drawable/baseline_logout_24"
+            android:layout_alignParentRight="true"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_clerk"
+            android:text="Clerk"
+            android:textSize="@dimen/_25sdp"
+            android:textColor="@color/secondaryColor"
+            android:fontFamily="sans-serif-black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="190dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_clerk_name"
+            android:text=""
+            android:textColor="@color/secondaryColor"
+            android:textSize="@dimen/_15sdp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:layout_below="@id/clerk_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"/>
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:id="@+id/clerk_img"
+            android:src="@drawable/profile_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_530sdp"
+        android:id="@+id/profile_clerk_clerkInfo_card"
+        android:elevation="@dimen/_11sdp"
+        app:cardCornerRadius="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_below="@id/com_lay"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/com_lay"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/profile_clerk_clerk_name_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Name :"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_15sdp" />
+
+                <EditText
+                    android:id="@+id/profile_clerk_clerk_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_clerk_clerk_name_title"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:drawableLeft="@drawable/icon_person_name"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:editable="false"
+                    android:fontFamily="sans-serif-black"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_15sdp" />
+
+                <TextView
+                    android:id="@+id/profile_clerk_clerk_id_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_below="@id/profile_clerk_clerk_name"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Clerk Id :"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/profile_clerk_clerk_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_clerk_clerk_id_title"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@drawable/icon_person_name"
+                    android:drawablePadding="15dp"
+                    android:editable="false"
+                    android:fontFamily="sans-serif-black"
+                    android:inputType="textCapCharacters"
+                    android:text=""
+                    android:textColor="@color/primaryColor"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/profile_clerk_clerk_mobile_no_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_clerk_clerk_id"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Mobile No :"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_15sdp"/>
+
+                <EditText
+                    android:id="@+id/profile_clerk_clerk_mobile_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_clerk_clerk_mobile_no_title"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:drawableLeft="@drawable/icon_phone"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:editable="false"
+                    android:fontFamily="sans-serif-black"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:text=""
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_15sdp"  />
+
+                <TextView
+                    android:id="@+id/profile_clerk_clerk_email_id_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_clerk_clerk_mobile_no"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Email Id :"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_15sdp" />
+
+                <EditText
+                    android:id="@+id/profile_clerk_clerk_email_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_clerk_clerk_email_id_title"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:drawableLeft="@drawable/icon_mail"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:editable="false"
+                    android:fontFamily="sans-serif-black"
+                    android:inputType="textEmailAddress"
+                    android:text=""
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_15sdp" />
+
+                <TextView
+                    android:id="@+id/profile_clerk_clerk_aadhar_no_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_clerk_clerk_email_id"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Aadhar No :"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_15sdp" />
+
+                <EditText
+                    android:id="@+id/profile_clerk_clerk_aadhar_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_clerk_clerk_aadhar_no_title"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:drawableLeft="@drawable/icon_lock"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:editable="false"
+                    android:fontFamily="sans-serif-black"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:text=""
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_15sdp"/>
+
+                <TextView
+                    android:id="@+id/profile_clerk_clerk_pan_no_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_clerk_clerk_aadhar_no"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Pan No :"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_15sdp" />
+
+                <EditText
+                    android:id="@+id/profile_clerk_clerk_pan_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_clerk_clerk_pan_no_title"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:drawableLeft="@drawable/icon_lock"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:editable="false"
+                    android:fontFamily="sans-serif-black"
+                    android:inputType="textCapCharacters"
+                    android:text=""
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_15sdp" />
+
+                <TextView
+                    android:id="@+id/profile_clerk_clerk_username_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_clerk_clerk_pan_no"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Username :"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_15sdp"  />
+
+                <EditText
+                    android:id="@+id/profile_clerk_clerk_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_clerk_clerk_username_title"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    android:drawableLeft="@drawable/icon_person"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:editable="false"
+                    android:fontFamily="sans-serif-black"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_15sdp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:id="@+id/profile_clerk_update_clerk_btn"
+                    android:layout_below="@id/profile_clerk_clerk_username"
+                    android:layout_centerHorizontal="true"
+                    android:text="Update"
+                    android:backgroundTint="@color/primaryColor"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    />
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+<!--    ===========================================================-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/all_card_background"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="@dimen/_45sdp"
+        android:layout_height="@dimen/_470sdp"
+        android:elevation="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_minus30sdp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_470sdp"
+          >
+
+            <ImageView
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_resize"
+                android:src="@drawable/icon_remove_sheet"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_minus33sdp" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_550sdp"
+                android:id="@+id/card_layout"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_admission_form"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:elevation="@dimen/_25sdp"
+            app:cardCornerRadius="@dimen/_15sdp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_admission_form"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/icon_admission_form" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_admission_form"
+                    android:layout_marginLeft="@dimen/_11sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="\t\t\Admission \n\t\t\t\t\Form"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="17dp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_leaving_certificate"
+            android:layout_below="@id/card_admission_form"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:elevation="30dp"
+            app:cardCornerRadius="@dimen/_15sdp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_leaving_certificate"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/icon_leaving_certificate" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_leaving_certificate"
+                    android:fontFamily="sans-serif-black"
+                    android:text="\t\t\Leaving \n Certificate"
+                    android:textColor="@color/primaryColor"
+                    android:layout_marginLeft="@dimen/_21sdp"
+                    android:textSize="@dimen/_13sdp"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_student_icard"
+                    android:layout_below="@id/card_leaving_certificate"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_35sdp"
+                    android:elevation="30dp"
+                    app:cardCornerRadius="@dimen/_15sdp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/img1_student_icard"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_marginLeft="@dimen/_30sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:src="@drawable/icon_student_id_card" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img1_student_icard"
+                            android:fontFamily="sans-serif-black"
+                            android:text="\t\t\Student \n \t\t\tI-Card"
+                            android:textColor="@color/primaryColor"
+                            android:layout_marginLeft="@dimen/_21sdp"
+                            android:textSize="@dimen/_13sdp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_550sdp"
+        android:id="@+id/card_layout2"
+        android:layout_toRightOf="@+id/card_layout"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_Student_Result"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:elevation="@dimen/_25sdp"
+            app:cardCornerRadius="@dimen/_15sdp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_student_result"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/icon_student_result" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_student_result"
+                    android:fontFamily="sans-serif-black"
+                    android:text="\t\t\Student \n\t\t\ Result"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginLeft="@dimen/_11sdp"
+                    android:layout_marginTop="@dimen/_6sdp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_Bonafide"
+            android:layout_below="@id/card_Student_Result"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:elevation="30dp"
+            app:cardCornerRadius="@dimen/_15sdp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_bonafide_certificate"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/icon_bonafide_certificate"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\t\t\Bonafide \n \t\Certificate"
+                    android:textColor="@color/primaryColor"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_below="@+id/img_bonafide_certificate"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginLeft="@dimen/_21sdp"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_Gernal_Register"
+            android:layout_below="@id/card_Bonafide"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:elevation="30dp"
+            app:cardCornerRadius="@dimen/_15sdp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img1_general_reg"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/icon_general_register"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\t\t\General \n \t\tRegister"
+                    android:textColor="@color/primaryColor"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_below="@+id/img1_general_reg"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginLeft="@dimen/_21sdp"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+        </RelativeLayout>
+
+        </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/actbtn_review"
+        android:src="@drawable/baseline_remove_red_eye_24"
+        android:tooltipText="Leave Approven"
+        android:tint="@color/white"
+        android:layout_above="@+id/actbtn_add"
+        android:backgroundTint="#F44336"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/_13sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:fabSize="auto"
+        android:visibility="gone"
+        android:background="@drawable/btn_shape"
+        app:shapeAppearance="@style/Widget.MaterialComponents.CircularProgressIndicator"
+
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/actbtn_add"
+        app:fabSize="auto"
+        android:tooltipText="Leave Request"
+        android:src="@drawable/icon_add"
+        android:tint="@color/white"
+        android:backgroundTint="#F44336"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/_13sdp"
+        android:layout_marginBottom="@dimen/_28sdp"
+        android:background="@drawable/btn_shape"
+        app:shapeAppearance="@style/Widget.MaterialComponents.CircularProgressIndicator"
+        app:backgroundTint="@color/white"
+        />
+
+</RelativeLayout>

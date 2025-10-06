@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".PrincipalModule.PrincipalServiceBookDisplayActivity">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/principal_service_book_display_principal_img"
+        android:src="@drawable/profile_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="490dp"
+        android:id="@+id/principal_service_book_display_principalInfo_card"
+        android:elevation="11dp"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/principal_service_book_display_principal_img"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/principal_service_book_display_principal_img"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/principal_service_book_display_principal_name_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Name :"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/principal_service_book_display_principal_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/principal_service_book_display_principal_name_title"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="sans-serif-black"
+                android:text="principal 123"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/principal_service_book_display_principal_joining_date_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/principal_service_book_display_principal_name"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Joining Date :"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/principal_service_book_display_principal_joining_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/principal_service_book_display_principal_joining_date_title"
+                android:fontFamily="sans-serif-black"
+                android:text="01/02/2024"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp"
+                android:layout_marginLeft="60dp"/>
+
+            <TextView
+                android:id="@+id/principal_service_book_display_principal_category_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/principal_service_book_display_principal_joining_date"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="category :"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/principal_service_book_display_principal_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/principal_service_book_display_principal_category_title"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Open"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/principal_service_book_display_principal_dob_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/principal_service_book_display_principal_category"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Date Of Birth :"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/principal_service_book_display_principal_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/principal_service_book_display_principal_dob_title"
+                android:fontFamily="sans-serif-black"
+                android:text="01/01/1980"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp"
+                android:layout_marginLeft="60dp"/>
+
+            <TextView
+                android:id="@+id/principal_service_book_display_principal_super_retirement_date_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/principal_service_book_display_principal_dob"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Super Retirement Date:"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/principal_service_book_display_principal_super_retirement_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/principal_service_book_display_principal_super_retirement_date_title"
+                android:fontFamily="sans-serif-black"
+                android:text="01/01/2030"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp"
+                android:layout_marginLeft="60dp"/>
+
+            <TextView
+                android:id="@+id/principal_service_book_display_principal_increment_date_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/principal_service_book_display_principal_super_retirement_date"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Increment Date :"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/principal_service_book_display_principal_increment_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/principal_service_book_display_principal_increment_date_title"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="sans-serif-black"
+                android:text="01/01/2022"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/principal_service_book_display_principal_increment_amount_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/principal_service_book_display_principal_increment_date"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Increment By Amount :"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/principal_service_book_display_principal_increment_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/principal_service_book_display_principal_increment_amount_title"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="sans-serif-black"
+                android:text="5000 ₹"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp"
+                android:layout_marginBottom="10dp"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

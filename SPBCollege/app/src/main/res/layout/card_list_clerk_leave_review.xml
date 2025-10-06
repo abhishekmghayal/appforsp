@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="6dp"
+            android:layout_margin="10dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/img__llrc_clerkimage"
+                    android:src="@drawable/profile_icon"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_llrc_Clerk_name"
+                    android:layout_toRightOf="@id/img__llrc_clerkimage"
+                    android:text="Clerk Name"
+                    android:layout_marginLeft="28dp"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="23dp"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_marginTop="9dp"/>
+
+                <TextView
+                    android:id="@+id/tv_llrc_Clerk_fromleave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_llrc_Clerk_name"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="From "
+                    android:textColor="@color/primaryColor"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_llrc_Clerk_fromDateleave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_llrc_Clerk_fromleave"
+                    android:layout_marginLeft="95dp"
+                    android:drawableLeft="@drawable/baseline_date_range_24"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="01/02/2024"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_llrc_Clerk_toleave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_llrc_Clerk_name"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="65dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="To "
+                    android:textColor="@color/primaryColor"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_llrc_Clerk_todateleave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_llrc_Clerk_toleave"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25dp"
+                    android:drawableLeft="@drawable/baseline_date_range_24"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="01/02/2024"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="142dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn__llrc_Clerk_requst_status_title"
+                    android:layout_below="@id/tv_llrc_Clerk_fromDateleave"
+                    android:text="Status : "
+                    android:textSize="17dp"
+                    android:textColor="@color/primaryColor"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/img__llrc_clerkimage"
+                    android:layout_marginLeft="25dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv__llrc_Clerk_requst_status"
+                    android:layout_width="142dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_llrc_Clerk_fromDateleave"
+                    android:layout_marginLeft="-79dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/btn__llrc_Clerk_requst_status_title"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Approved"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="17dp"
+                    android:layout_marginBottom="8dp"/>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

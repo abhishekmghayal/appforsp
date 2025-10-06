@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ClerkModule.ClerkLeave.ViewMyLeaveRequestActivity">
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/view_leave_request_staff_img"
+        android:src="@drawable/profile_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="-10dp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="510dp"
+        android:id="@+id/view_leave_request_staffInfo_card"
+        android:elevation="11dp"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/view_leave_request_staff_img"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/view_leave_request_staff_img"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/view_leave_request_staff_name_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Name :"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/view_leave_request_staff_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_leave_request_staff_name_title"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@drawable/icon_person_name"
+                android:drawablePadding="15dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Staff 123"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/view_leave_request_staff_id_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_leave_request_staff_name"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Staff Id :"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/view_leave_request_staff_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_leave_request_staff_id_title"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@drawable/icon_lock"
+                android:drawablePadding="15dp"
+                android:fontFamily="sans-serif-black"
+                android:text="C01"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/view_leave_request_staff_designation_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_leave_request_staff_id"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Designation :"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/view_leave_request_staff_designation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_leave_request_staff_designation_title"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@drawable/baseline_supervised_user_circle_24"
+                android:drawablePadding="15dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Teacher"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/view_leave_request_staff_leave_duration_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_leave_request_staff_designation"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Leave Duration :"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/view_leave_request_staff_leave_from_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_leave_request_staff_leave_duration_title"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-black"
+                android:text="From "
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/view_leave_request_leave_from_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_leave_request_staff_leave_from_title"
+                android:layout_marginLeft="25dp"
+                android:drawableLeft="@drawable/baseline_date_range_24"
+                android:drawablePadding="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="01/02/2024"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/view_leave_request_staff_leave_to_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_leave_request_staff_leave_duration_title"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="75dp"
+                android:fontFamily="sans-serif-black"
+                android:text="To "
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/view_leave_request_leave_to_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_leave_request_staff_leave_to_title"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:drawableLeft="@drawable/baseline_date_range_24"
+                android:drawablePadding="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="01/02/2024"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/view_leave_request_staff_leave_title_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_leave_request_leave_from_date"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Leave Title :"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/view_leave_request_staff_leave_title_value_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_leave_request_staff_leave_title_title"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@drawable/baseline_offline_pin_24"
+                android:drawablePadding="15dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Medical Leave"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/view_leave_request_staff_leave_description_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_leave_request_staff_leave_title_value_title"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Short Description :"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/view_leave_request_staff_leave_description_value_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_leave_request_staff_leave_description_title"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="15dp"
+                android:fontFamily="sans-serif"
+                android:lines="2"
+                android:text="Medical Leave for admitted in hospital , having high fever"
+                android:textColor="@color/primaryColor"
+                android:textSize="17dp"
+                />
+
+            <TextView
+                android:id="@+id/view_leave_request_staff_leave_status_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_leave_request_staff_leave_description_value_title"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Status :"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/view_leave_request_staff_leave_status_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_leave_request_staff_leave_description_value_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Pendding"
+                android:textColor="@color/primaryColor"
+                android:textSize="20dp"
+                android:layout_toRightOf="@id/view_leave_request_staff_leave_status_title"/>
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_leave_request_close_leave_btn"
+        android:layout_below="@id/view_leave_request_staffInfo_card"
+        android:text="Close Leave"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/primaryColor"
+        android:layout_marginLeft="45dp"
+        />
+
+</RelativeLayout>

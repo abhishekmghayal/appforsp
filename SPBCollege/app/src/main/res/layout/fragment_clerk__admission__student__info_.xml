@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ClerkModule.Admission.InputingData.Clerk_Admission_Student_Info_Fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_top_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_9sdp"
+                android:text="Admission Form"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="@font/playfairdisplayvariablefontwght"
+                android:textColor="@color/primaryColor"
+                android:textSize="@dimen/_27sdp" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_110sdp"
+                android:layout_marginLeft="@dimen/_190sdp"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:id="@+id/profile_layout"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="@dimen/_220sdp"
+                    app:cardBackgroundColor="@color/white">
+
+                    <ImageView
+                        android:id="@+id/student_photo"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/profile_icon" />
+
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv__aS_admission_studentinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_100sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:hint="All Inforamtion \nOf Student "
+                android:inputType="text"
+                android:fontFamily="@font/f1"
+                android:padding="@dimen/_3sdp"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:id="@+id/img__aS_student_image1"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_below="@+id/tv__aS_admission_studentinfo"
+                android:src="@drawable/division_line" />
+
+            <EditText
+                android:id="@+id/et__aS_admission_class"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_below="@+id/img__aS_student_image1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:drawablePadding="8dp"
+                android:hint="Admission Class"
+                android:inputType="text"
+                android:fontFamily="@font/f1"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et__aS_admission_no"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_below="@+id/profile_layout"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/f1"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:hint="Admission No"
+                android:inputType="number"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginLeft="@dimen/_160sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et__aS_admission_date"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/f1"
+                android:layout_below="@+id/et__aS_admission_class"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:hint="Date"
+                android:inputType="date"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/et__aS_admission_id"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/f1"
+                android:layout_below="@+id/et__aS_admission_no"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:drawablePadding="8dp"
+                android:hint="Student Id"
+                android:inputType="number"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_160sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et__aS_admission_AdharNO"
+                android:layout_width="@dimen/_150sdp"
+                android:fontFamily="@font/f1"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et__aS_admission_date"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:hint="Addhar No"
+                android:inputType="number"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="@dimen/_430sdp"
+                android:layout_height="wrap_content"
+                android:id="@+id/img__aS_student_image2"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:layout_below="@+id/et__aS_admission_id"
+                android:src="@drawable/division_line" />
+
+            <TextView
+                android:id="@+id/tv__aS_admission_studentpersonalinfo"
+                android:layout_below="@+id/img__aS_student_image2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_22sdp"
+                android:hint="Stduent Section"
+                android:inputType="text"
+                android:fontFamily="@font/f1"
+                android:padding="@dimen/_3sdp"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="@dimen/_430sdp"
+                android:layout_height="wrap_content"
+                android:id="@+id/img__aS_student_image3"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_below="@+id/tv__aS_admission_studentpersonalinfo"
+                android:src="@drawable/division_line" />
+            <EditText
+                android:id="@+id/et__aS_admission_sname"
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img__aS_student_image3"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:fontFamily="@font/f1"
+                android:hint="Surname//Student Name//Father Name"
+                android:inputType="text"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/et__aS_admission_MotherName"
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et__aS_admission_sname"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:hint="Complete Name Of Mother "
+                android:fontFamily="@font/f1"
+                android:inputType="text"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="@dimen/_430sdp"
+                android:layout_height="wrap_content"
+                android:id="@+id/img__aS_student_image4"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_below="@+id/et__aS_admission_MotherName"
+                android:src="@drawable/division_line" />
+
+            <EditText
+                android:id="@+id/et__aS_admission_cast"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/f1"
+                android:layout_below="@+id/img__aS_student_image4"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:hint="Cast"
+                android:inputType="text"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et__aS_admission_religon"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/f1"
+                android:layout_below="@+id/img__aS_student_image4"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:hint="Religion"
+                android:inputType="text"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_160sdp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/et__aS_admission_BirthPlace"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et__aS_admission_cast"
+                android:fontFamily="@font/f1"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:hint="Birth Place"
+                android:inputType="text"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/et__aS_admission_DOBno"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/f1"
+                android:layout_below="@+id/et__aS_admission_religon"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:hint="DOB No"
+                android:inputType="date"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_160sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et__aS_admission_DOBinletter"
+                android:layout_width="@dimen/_190sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/f1"
+                android:layout_below="@+id/et__aS_admission_BirthPlace"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:hint="DOB in Letter"
+                android:inputType="text"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/et__aS_admission_sAge"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/f1"
+                android:layout_below="@+id/et__aS_admission_DOBno"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:hint="Age"
+                android:inputType="text"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_210sdp"
+                android:textStyle="bold" />
+            <RadioGroup
+                android:id="@+id/radioGroupGender"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_below="@+id/et__aS_admission_DOBinletter">
+
+                <RadioButton
+                    android:id="@+id/radioButtonMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:padding="@dimen/_8sdp"
+                    android:textColor="@color/primaryColor"
+                    android:fontFamily="@font/f1"
+                    android:textColorHint="@color/primaryColor"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                     />
+
+                <RadioButton
+                    android:id="@+id/radioButtonFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:padding="@dimen/_8sdp"
+                    android:textColor="@color/primaryColor"
+                    android:fontFamily="@font/f1"
+                    android:textColorHint="@color/primaryColor"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold"
+                    />
+
+            </RadioGroup>
+            <EditText
+                android:id="@+id/et__aS_admission_mothertung"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/f1"
+                android:layout_below="@+id/et__aS_admission_sAge"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:hint="Mother Tung"
+                android:inputType="text"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_180sdp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:layout_width="@dimen/_430sdp"
+                android:layout_height="wrap_content"
+                android:id="@+id/img__aS_student_image5"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_below="@+id/radioGroupGender"
+                android:src="@drawable/division_line" />
+            <EditText
+                android:id="@+id/et__aS_admission_SclassPassed"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img__aS_student_image5"
+                android:fontFamily="@font/f1"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:hint="Class Passed"
+                android:inputType="text"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et__aS_admission_SPassingGrade"
+                android:layout_width="@dimen/_150sdp"
+                android:fontFamily="@font/f1"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et__aS_admission_mothertung"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:hint="Pass Grade"
+                android:inputType="text"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_21sdp"
+                android:layout_marginLeft="@dimen/_160sdp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/et__aS_admission_SlastSchoolname"
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/f1"
+                android:layout_below="@+id/et__aS_admission_SclassPassed"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:hint="Last School Name"
+                android:inputType="text"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="@dimen/_430sdp"
+                android:layout_height="wrap_content"
+                android:id="@+id/img__aS_student_image7"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_below="@+id/et__aS_admission_SlastSchoolname"
+                android:src="@drawable/division_line" />
+
+            <TextView
+                android:id="@+id/tv__aS_admission_studentbankdetail"
+                android:layout_below="@+id/img__aS_student_image7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Stdudent Bank Details"
+                android:inputType="text"
+                android:fontFamily="@font/f1"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_13sdp"
+                android:padding="@dimen/_3sdp"
+                android:layout_marginLeft="@dimen/_22sdp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="@dimen/_430sdp"
+                android:layout_height="wrap_content"
+                android:id="@+id/img__aS_student_image8"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_below="@+id/tv__aS_admission_studentbankdetail"
+                android:src="@drawable/division_line" />
+            <EditText
+                android:id="@+id/et__aS_admission_bankname"
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img__aS_student_image8"
+                android:fontFamily="@font/f1"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:hint="Bank Name Having the Account"
+                android:inputType="text"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/et__aS_admission_bankIFsC"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et__aS_admission_bankname"
+                android:fontFamily="@font/f1"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:hint="Bank IFSC Code"
+                android:inputType="number"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et__aS_admission_bankNo"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et__aS_admission_bankIFsC"
+                android:fontFamily="@font/f1"
+                android:background="@drawable/et_rounded_corner"
+                android:drawableStart="@drawable/icon_lock"
+                android:hint="Bank Account No"
+                android:inputType="numberPassword"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="@dimen/_430sdp"
+                android:layout_height="wrap_content"
+                android:id="@+id/img__aS_student_image9"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_below="@+id/et__aS_admission_bankNo"
+                android:src="@drawable/division_line" />
+
+            <Button
+                android:id="@+id/btn_submit_admission"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img__aS_student_image9"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:backgroundTint="@color/primaryColor"
+                android:text="Go Next" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

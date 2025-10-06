@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SPBCollege"
+        tools:targetApi="31" >
+        <activity
+            android:name=".ClerkModule.ClerkLeave.ViewMyLeaveRequestActivity"
+            android:exported="false"
+            android:theme="@style/ActionBar"/>
+        <activity
+            android:name=".PrincipalModule.RegisterPrincipalActivity"
+            android:exported="false"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".PrincipalModule.StaffServiceBookDisplayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrincipalModule.PrincipalServiceBookDisplayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrincipalModule.TeacherServiceBookActivity"
+            android:exported="false"
+            android:parentActivityName=".PrincipalModule.PrincipalViewServiceBookActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".PrincipalModule.ClerkServiceBookActivity"
+            android:exported="false"
+            android:parentActivityName=".PrincipalModule.PrincipalViewServiceBookActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".PrincipalModule.PrincipalServiceBookActivity"
+            android:exported="false"
+            android:parentActivityName=".PrincipalModule.PrincipalViewServiceBookActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".PrincipalModule.PrincipalViewServiceBookActivity"
+            android:exported="false"
+            android:parentActivityName=".PrincipalModule.PrincipalHomeActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".PrincipalModule.PrincipalViewLeaveRequestActivity"
+            android:exported="false"
+            android:parentActivityName=".PrincipalModule.LeaveRequestActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".PrincipalModule.ViewTeacherActivity"
+            android:exported="false"
+            android:parentActivityName=".PrincipalModule.ManageTeacherActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".PrincipalModule.ViewClerkActivity"
+            android:exported="false"
+            android:parentActivityName=".PrincipalModule.ManageClerkActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".PrincipalModule.AddTeacherActivity"
+            android:exported="false"
+            android:parentActivityName=".PrincipalModule.ManageTeacherActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".PrincipalModule.AddClerkActivity"
+            android:exported="false"
+            android:parentActivityName=".PrincipalModule.ManageClerkActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".PrincipalModule.LeaveRequestActivity"
+            android:exported="false"
+            android:parentActivityName=".PrincipalModule.PrincipalHomeActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".PrincipalModule.ManageTeacherActivity"
+            android:exported="false"
+            android:parentActivityName=".PrincipalModule.PrincipalHomeActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".PrincipalModule.ManageClerkActivity"
+            android:exported="false"
+            android:parentActivityName=".PrincipalModule.PrincipalHomeActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".ClerkModule.Admission.ViewData.ActivityViewRecentlyAdmissionForm"
+            android:exported="false"
+            android:parentActivityName=".ClerkModule.ClerkHomeActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".ClerkModule.Admission.ViewData.ActivityVIewStudentAdmissionForm"
+            android:exported="false"
+            android:parentActivityName=".ClerkModule.Admission.ViewData.ActivityViewRecentlyAdmissionForm"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".ClerkModule.Admission.InputingData.Clerk_Admission_Form_Activity"
+            android:exported="false"
+            android:parentActivityName=".ClerkModule.Admission.ViewData.ActivityViewRecentlyAdmissionForm"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".ClerkModule.Admission.InputingData.Clerk_Admission_Parent_Info_Fragment"
+            android:exported="false"
+            android:parentActivityName=".ClerkModule.Admission.ViewData.ActivityViewRecentlyAdmissionForm"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".ClerkModule.Admission.InputingData.Clerk_Admission_Student_Info_Fragment"
+            android:exported="false"
+            android:parentActivityName=".ClerkModule.Admission.ViewData.ActivityViewRecentlyAdmissionForm"
+            android:theme="@style/ActionBar" />
+
+        <activity
+            android:name=".ClerkModule.Bonafide.RecentlyGeneratedBonafideActivity"
+            android:exported="false"
+            android:parentActivityName=".ClerkModule.ClerkHomeActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".ClerkModule.Bonafide.BonafideCertificateActivity"
+            android:exported="false"
+            android:parentActivityName=".ClerkModule.ClerkHomeActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".ClerkModule.Bonafide.ViewBonafideActivity"
+            android:exported="false"
+            android:parentActivityName=".ClerkModule.ClerkHomeActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".ClerkModule.GernalRegister.GeneralRegisterActivity"
+            android:exported="false"
+            android:parentActivityName=".ClerkModule.ClerkHomeActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".ClerkModule.GernalRegister.AddStudentGenralRegisterActivity"
+            android:exported="false"
+            android:parentActivityName=".ClerkModule.GernalRegister.GeneralRegisterActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".ClerkModule.GernalRegister.ViewStudentGeneralRegActivity"
+            android:exported="false"
+            android:parentActivityName=".ClerkModule.GernalRegister.GeneralRegisterActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".ClerkModule.LeavingCertificate.LeavingCertificateActivity"
+            android:exported="false"
+            android:parentActivityName=".ClerkModule.ClerkHomeActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".ClerkModule.LeavingCertificate.AddStudentLeavingCertificateActivity"
+            android:exported="false"
+            android:parentActivityName=".ClerkModule.LeavingCertificate.LeavingCertificateActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".ClerkModule.LeavingCertificate.ViewStudentLeavingCertificate"
+            android:exported="false"
+            android:parentActivityName=".ClerkModule.LeavingCertificate.LeavingCertificateActivity"
+            android:theme="@style/ActionBar" />
+
+
+        <activity
+            android:name=".ClerkModule.Icard.RecentlyGeneratedICardActivity"
+            android:exported="false"
+            android:parentActivityName=".ClerkModule.ClerkHomeActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".ClerkModule.Icard.StudentICardActivity"
+            android:exported="false"
+            android:parentActivityName=".ClerkModule.ClerkHomeActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".ClerkModule.Icard.ViewStudentICardDetailsActivity"
+            android:exported="false"
+            android:parentActivityName=".ClerkModule.ClerkHomeActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".ClerkModule.ClerkResult.StudentResultActivity"
+            android:exported="false"
+            android:parentActivityName=".ClerkModule.ClerkHomeActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".ClerkModule.ClerkResult.EightClassClerk.EightClassVIew"
+            android:exported="false"
+            android:parentActivityName=".ClerkModule.ClerkResult.StudentResultActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".ClerkModule.ClerkResult.NineClassClerk.NineClassView"
+            android:exported="false"
+            android:parentActivityName=".ClerkModule.ClerkResult.StudentResultActivity"
+            android:theme="@style/ActionBar" />
+
+
+        <activity
+            android:name=".ClerkModule.ClerkLeave.ClerkLeaveReviewActivity"
+            android:exported="false"
+            android:parentActivityName=".ClerkModule.ClerkHomeActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".ClerkModule.ClerkLeave.ClerkApplyLeaveRequestActivity"
+            android:exported="false"
+            android:parentActivityName=".ClerkModule.ClerkHomeActivity"
+            android:theme="@style/ActionBar" />
+
+        <activity
+            android:name=".TeacherModule.ResultModule.EightClass.Eight_Class_Result"
+            android:exported="false"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".TeacherModule.ResultModule.Teacher_student_Result_class_Activity"
+            android:exported="false"
+            android:parentActivityName=".TeacherModule.TeacherHomeActivity"
+            android:theme="@style/ActionBar" />
+
+        <activity
+            android:name=".TeacherModule.ResultModule.EightClass.Genrate_New_Eight_Activity"
+            android:exported="false"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".TeacherModule.ResultModule.EightClass.View_Result_of_eight_Activity"
+            android:exported="false"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".TeacherModule.ResultModule.NineClass.Genrate_New_Nine_Result_Activity"
+            android:exported="false"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".TeacherModule.ResultModule.NineClass.Nine_Class_Result"
+            android:exported="false"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".TeacherModule.ResultModule.NineClass.View_Result_of_nine_Activity"
+            android:exported="false"
+            android:theme="@style/ActionBar" />
+
+        <activity
+            android:name=".ClerkModule.ClerkHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrincipalModule.PrincipalHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TeacherModule.TeacherHomeActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

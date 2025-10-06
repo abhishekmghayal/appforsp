@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrincipalModule.ViewTeacherActivity"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/view_teacher_teacher_img"
+        android:src="@drawable/profile_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="490dp"
+        android:id="@+id/view_teacher_teacherInfo_card"
+        android:elevation="11dp"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/view_teacher_teacher_img"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/view_teacher_teacher_img"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/view_teacher_teacher_name_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Name :"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/view_teacher_teacher_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_person_name"
+                    android:drawablePadding="15dp"
+                    android:layout_below="@id/view_teacher_teacher_name_title"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text=""
+                    android:inputType="textPersonName"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="20dp"
+                    android:editable="false"/>
+
+                <TextView
+                    android:id="@+id/view_teacher_teacher_id_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_teacher_teacher_name"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="teacher Id :"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/view_teacher_teacher_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_teacher_teacher_id_title"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text=""
+                    android:textColor="@color/primaryColor"
+                    android:textSize="20dp"
+                    android:drawableLeft="@drawable/icon_lock"
+                    android:drawablePadding="15dp"
+                    android:inputType="textCapCharacters"
+                    android:editable="false"/>
+
+                <TextView
+                    android:id="@+id/view_teacher_teacher_mobile_no_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_teacher_teacher_id"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Mobile No :"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/view_teacher_teacher_mobile_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_teacher_teacher_mobile_no_title"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text=""
+                    android:textColor="@color/primaryColor"
+                    android:textSize="20dp"
+                    android:drawableLeft="@drawable/icon_phone"
+                    android:drawablePadding="15dp"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:editable="false"/>
+
+                <TextView
+                    android:id="@+id/view_teacher_teacher_email_id_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_teacher_teacher_mobile_no"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Email Id :"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/view_teacher_teacher_email_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_teacher_teacher_email_id_title"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text=""
+                    android:textColor="@color/primaryColor"
+                    android:textSize="20dp"
+                    android:drawableLeft="@drawable/icon_mail"
+                    android:drawablePadding="15dp"
+                    android:inputType="textEmailAddress"
+                    android:editable="false"/>
+
+                <TextView
+                    android:id="@+id/view_teacher_teacher_aadhar_no_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_teacher_teacher_email_id"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Aadhar No :"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/view_teacher_teacher_aadhar_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_teacher_teacher_aadhar_no_title"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text=""
+                    android:textColor="@color/primaryColor"
+                    android:textSize="20dp"
+                    android:drawableLeft="@drawable/icon_lock"
+                    android:drawablePadding="15dp"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:editable="false"/>
+
+                <TextView
+                    android:id="@+id/view_teacher_teacher_pan_no_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_teacher_teacher_aadhar_no"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Pan No :"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/view_teacher_teacher_pan_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_teacher_teacher_pan_no_title"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text=""
+                    android:textColor="@color/primaryColor"
+                    android:textSize="20dp"
+                    android:drawableLeft="@drawable/icon_lock"
+                    android:drawablePadding="15dp"
+                    android:inputType="textCapCharacters"
+                    android:editable="false"/>
+
+                <TextView
+                    android:id="@+id/view_teacher_teacher_username_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_teacher_teacher_pan_no"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Username :"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/view_teacher_teacher_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_teacher_teacher_username_title"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text=""
+                    android:inputType="text"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:drawableLeft="@drawable/icon_person"
+                    android:drawablePadding="15dp"
+                    android:editable="false"/>
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_teacher_update_teacher_btn"
+        android:layout_below="@id/view_teacher_teacherInfo_card"
+        android:text="Update"
+        android:backgroundTint="@color/primaryColor"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="45dp"
+        />
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_teacher_delete_teacher"
+        android:layout_below="@id/view_teacher_teacherInfo_card"
+        android:text="Delete"
+        android:layout_marginRight="45dp"
+        android:backgroundTint="@color/primaryColor"
+        android:layout_alignParentRight="true"
+        />
+
+
+
+</RelativeLayout>

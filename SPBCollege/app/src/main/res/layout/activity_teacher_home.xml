@@ -1,0 +1,426 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeacherModule.TeacherHomeActivity"
+    android:background="@color/primaryColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/com_lay"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_teacher"
+            android:text="Teacher"
+            android:textSize="@dimen/_25sdp"
+            android:textColor="@color/secondaryColor"
+            android:fontFamily="sans-serif-black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="190dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_teacher_name"
+            android:text=""
+            android:textColor="@color/secondaryColor"
+            android:textSize="@dimen/_15sdp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:layout_below="@id/teacher_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"/>
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:id="@+id/teacher_img"
+            android:src="@drawable/profile_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_530sdp"
+        android:id="@+id/profile_teacher_teacherInfo_card"
+        android:elevation="@dimen/_11sdp"
+        app:cardCornerRadius="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_below="@id/com_lay"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/com_lay"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/profile_teacher_teacher_name_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Name :"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_15sdp" />
+
+                <EditText
+                    android:id="@+id/profile_teacher_teacher_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_teacher_teacher_name_title"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:drawableLeft="@drawable/icon_person_name"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:editable="false"
+                    android:fontFamily="sans-serif-black"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_15sdp" />
+
+                <TextView
+                    android:id="@+id/profile_teacher_teacher_id_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_below="@id/profile_teacher_teacher_name"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="teacher Id :"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/profile_teacher_teacher_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_teacher_teacher_id_title"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@drawable/icon_person_name"
+                    android:drawablePadding="15dp"
+                    android:editable="false"
+                    android:fontFamily="sans-serif-black"
+                    android:inputType="textCapCharacters"
+                    android:text=""
+                    android:textColor="@color/primaryColor"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/profile_teacher_teacher_mobile_no_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_teacher_teacher_id"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Mobile No :"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_15sdp"/>
+
+                <EditText
+                    android:id="@+id/profile_teacher_teacher_mobile_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_teacher_teacher_mobile_no_title"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:drawableLeft="@drawable/icon_phone"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:editable="false"
+                    android:fontFamily="sans-serif-black"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:text=""
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_15sdp"  />
+
+                <TextView
+                    android:id="@+id/profile_teacher_teacher_email_id_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_teacher_teacher_mobile_no"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Email Id :"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_15sdp" />
+
+                <EditText
+                    android:id="@+id/profile_teacher_teacher_email_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_teacher_teacher_email_id_title"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:drawableLeft="@drawable/icon_mail"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:editable="false"
+                    android:fontFamily="sans-serif-black"
+                    android:inputType="textEmailAddress"
+                    android:text=""
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_15sdp" />
+
+                <TextView
+                    android:id="@+id/profile_teacher_teacher_aadhar_no_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_teacher_teacher_email_id"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Aadhar No :"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_15sdp" />
+
+                <EditText
+                    android:id="@+id/profile_teacher_teacher_aadhar_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_teacher_teacher_aadhar_no_title"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:drawableLeft="@drawable/icon_lock"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:editable="false"
+                    android:fontFamily="sans-serif-black"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:text=""
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_15sdp"/>
+
+                <TextView
+                    android:id="@+id/profile_teacher_teacher_pan_no_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_teacher_teacher_aadhar_no"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Pan No :"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_15sdp" />
+
+                <EditText
+                    android:id="@+id/profile_teacher_teacher_pan_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_teacher_teacher_pan_no_title"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:drawableLeft="@drawable/icon_lock"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:editable="false"
+                    android:fontFamily="sans-serif-black"
+                    android:inputType="textCapCharacters"
+                    android:text=""
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_15sdp" />
+
+                <TextView
+                    android:id="@+id/profile_teacher_teacher_username_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_teacher_teacher_pan_no"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Username :"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_15sdp"  />
+
+                <EditText
+                    android:id="@+id/profile_teacher_teacher_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_teacher_teacher_username_title"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    android:drawableLeft="@drawable/icon_person"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:editable="false"
+                    android:fontFamily="sans-serif-black"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_15sdp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:id="@+id/profile_teacher_update_teacher_btn"
+                    android:layout_below="@id/profile_teacher_teacher_username"
+                    android:layout_centerHorizontal="true"
+                    android:text="Update"
+                    android:backgroundTint="@color/primaryColor"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    />
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+    <!--    ===========================================================-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/all_card_background"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="@dimen/_45sdp"
+        android:layout_height="@dimen/_470sdp"
+        android:elevation="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_minus30sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_470sdp"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/card_resize"
+                    android:src="@drawable/icon_remove_sheet"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_minus33sdp" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_550sdp"
+                    android:id="@+id/card_layout"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    >
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_student_attandance"
+                        android:layout_width="@dimen/_280sdp"
+                        android:layout_height="@dimen/_90sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:elevation="@dimen/_30sdp"
+                        app:cardCornerRadius="@dimen/_15sdp"
+                        android:visibility="invisible">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/img_admission_form"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_60sdp"
+                                android:layout_marginLeft="@dimen/_30sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:src="@drawable/icon_attendance" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/img_admission_form"
+                                android:layout_marginLeft="@dimen/_16sdp"
+                                android:layout_marginTop="@dimen/_18sdp"
+                                android:fontFamily="sans-serif-black"
+                                android:text="\t\t\Student's \n\t\t\t\t\Attandance"
+                                android:textColor="@color/primaryColor"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_student_result"
+                        android:layout_width="@dimen/_280sdp"
+                        android:layout_height="@dimen/_90sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:elevation="@dimen/_30sdp"
+                        android:layout_below="@id/card_student_attandance"
+                        app:cardCornerRadius="@dimen/_15sdp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/img_mark"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_60sdp"
+                                android:layout_marginLeft="@dimen/_30sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:src="@drawable/icon_student_result" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/img_mark"
+                                android:layout_marginLeft="@dimen/_16sdp"
+                                android:layout_marginTop="@dimen/_18sdp"
+                                android:fontFamily="sans-serif-black"
+                                android:text="\t\t\Student's \n\t\t\t\t\Result"
+                                android:textColor="@color/primaryColor"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/actbtn_review"
+        android:src="@drawable/baseline_remove_red_eye_24"
+        android:tooltipText="Leave Approven"
+        android:tint="@color/white"
+        android:layout_above="@+id/actbtn_add"
+        android:backgroundTint="#F44336"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/_13sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:fabSize="auto"
+        android:visibility="gone"
+        android:background="@drawable/btn_shape"
+        app:shapeAppearance="@style/Widget.MaterialComponents.CircularProgressIndicator"
+
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/actbtn_add"
+        app:fabSize="auto"
+        android:tooltipText="Leave Request"
+        android:src="@drawable/icon_add"
+        android:tint="@color/white"
+        android:backgroundTint="#F44336"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/_13sdp"
+        android:layout_marginBottom="@dimen/_28sdp"
+        android:background="@drawable/btn_shape"
+        app:shapeAppearance="@style/Widget.MaterialComponents.CircularProgressIndicator"
+        app:backgroundTint="@color/white"
+        />
+
+</RelativeLayout>

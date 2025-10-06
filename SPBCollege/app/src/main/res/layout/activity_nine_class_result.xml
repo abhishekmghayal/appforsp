@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeacherModule.ResultModule.NineClass.Nine_Class_Result">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_view_nine_recetlymarksheet"
+        />
+
+    <!--    tools:listitem="@layout/list_card_view"-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_gernate_marksheet_nine_Class"
+        app:fabSize="auto"
+        android:src="@drawable/icon_add"
+
+
+        android:backgroundTint="#FF1605"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btn_shape"
+        app:shapeAppearance="@style/Widget.MaterialComponents.CircularProgressIndicator"
+        app:backgroundTint="@color/white"
+        />
+</RelativeLayout>

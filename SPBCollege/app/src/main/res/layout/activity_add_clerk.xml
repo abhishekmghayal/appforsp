@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PrincipalModule.AddClerkActivity">
+
+    <EditText
+        android:id="@+id/add_clerk_et_clerk_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:textStyle="bold"
+        android:inputType="textPersonName"
+        android:hint="Full Name"
+        android:paddingLeft="@dimen/_10sdp"
+        android:textColor="@color/primaryColor"
+        android:textColorHint="@color/primaryColor"
+        android:textSize="@dimen/_16sdp" />
+
+    <EditText
+        android:id="@+id/add_clerk_et_clerk_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_clerk_et_clerk_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:hint="Clerk Id"
+        android:textColor="@color/primaryColor"
+        android:textColorHint="@color/primaryColor"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        android:inputType="textCapCharacters" />
+
+    <EditText
+        android:id="@+id/add_clerk_et_clerk_mo_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_clerk_et_clerk_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:hint="Mobile No"
+        android:textColor="@color/primaryColor"
+        android:textColorHint="@color/primaryColor"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:maxLength="10" />
+
+    <EditText
+        android:id="@+id/add_clerk_et_clerk_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_clerk_et_clerk_mo_no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:hint="Email Id"
+        android:textColor="@color/primaryColor"
+        android:textColorHint="@color/primaryColor"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/add_clerk_et_clerk_aadhar_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_clerk_et_clerk_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:hint="Aadhar No"
+        android:textColor="@color/primaryColor"
+        android:textColorHint="@color/primaryColor"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:maxLength="12" />
+
+    <EditText
+        android:id="@+id/add_clerk_et_clerk_pan_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_clerk_et_clerk_aadhar_no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:hint="Pan No"
+        android:textColor="@color/primaryColor"
+        android:textColorHint="@color/primaryColor"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        android:inputType="textCapCharacters" />
+
+    <EditText
+        android:id="@+id/add_clerk_et_clerk_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_clerk_et_clerk_pan_no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:hint="Username"
+        android:textColor="@color/primaryColor"
+        android:textColorHint="@color/primaryColor"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/add_clerk_et_clerk_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_clerk_et_clerk_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:hint="Password"
+        android:textColor="@color/primaryColor"
+        android:textColorHint="@color/primaryColor"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Password"
+        android:id="@+id/add_clerk_chk_show_pass"
+        android:textColor="@color/primaryColor"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:textSize="@dimen/_11sdp"
+        android:textColorHint="@color/primaryColor"
+        android:layout_below="@id/add_clerk_et_clerk_password"
+        android:backgroundTint="@color/primaryColor"
+        android:buttonTint="@color/primaryColor" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_clerk_btn_add_profile"
+        android:layout_below="@id/add_clerk_chk_show_pass"
+        android:text="Add Profile"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/_16sdp"
+        android:backgroundTint="@color/primaryColor" />
+
+</RelativeLayout>

@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeacherModule.ResultModule.EightClass.View_Result_of_eight_Activity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_top_heading_studenticard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:text="Eight Class Result"
+                android:textStyle="bold"
+                android:fontFamily="@font/playfairdisplayvariablefontwght"
+                android:textColor="@color/primaryColor"
+                android:textSize="@dimen/_25sdp" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pdf"
+                android:src="@drawable/baseline_print_24"
+                android:layout_toRightOf="@id/tv_top_heading_studenticard"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_70sdp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/view_eightstudent_card"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/tv_top_heading_studenticard"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:elevation="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv__avroe_stdadharno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="Adhar No. :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avroe_stdadharno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv__avroe_stdadharno"
+                        android:fontFamily="sans-serif-black"
+                        android:text="xxxxxxxxx"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv__avroe_stdgenralno"
+                        android:layout_below="@+id/tv__avroe_stdadharno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="Genral No. :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avroe_stdgenralno"
+                        android:layout_below="@+id/tv__avroe_stdadharno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv__avroe_stdgenralno"
+                        android:fontFamily="sans-serif-black"
+                        android:text="xxxxxxxxx"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:drawablePadding="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/tv__avroe_stdname"
+                        android:layout_below="@+id/tv__avroe_stdgenralno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="Student Name :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avroe_stdname"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:layout_below="@id/tv__avroe_stdname"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Abhishek Manohar Ghayal"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_9sdp"
+                        android:drawablePadding="@dimen/_10sdp" />
+                    <TextView
+                        android:id="@+id/tv__avroe_stdstandard"
+                        android:layout_below="@+id/et__avroe_stdname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="Standard:"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avroe_stdstandard"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:layout_below="@id/tv__avroe_stdstandard"
+                        android:fontFamily="sans-serif-black"
+                        android:text="XXX"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_9sdp"
+                        android:drawablePadding="@dimen/_10sdp"/>
+                    <ImageView
+                        android:layout_width="@dimen/_430sdp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__avroe_img1"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_below="@+id/et__avroe_stdstandard"
+                        android:src="@drawable/division_line" />
+                    <TextView
+                        android:id="@+id/tv__avroe_stdtitle"
+                        android:layout_below="@+id/img__avroe_img1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="Student Result As Per Subject:"
+                        />
+                    <TextView
+                        android:id="@+id/tv__avroe_stdmarathisub"
+                        android:layout_below="@+id/tv__avroe_stdtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_45sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="Marathi :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avroe_stdmarathisub"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:layout_below="@id/tv__avroe_stdmarathisub"
+                        android:fontFamily="sans-serif-black"
+                        android:text="XXX"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_45sdp"
+                        android:drawablePadding="@dimen/_10sdp" />
+                    <TextView
+                        android:id="@+id/tv__avroe_stdhindisub"
+                        android:layout_below="@+id/tv__avroe_stdtitle"
+                        android:layout_toRightOf="@+id/tv__avroe_stdmarathisub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="Hindi :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avroe_stdhindisub"
+                        android:layout_toRightOf="@+id/et__avroe_stdmarathisub"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:layout_below="@id/tv__avroe_stdhindisub"
+                        android:fontFamily="sans-serif-black"
+                        android:text="XXX"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_40sdp"
+                        android:drawablePadding="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/tv__avroe_stdmenglishsub"
+                        android:layout_below="@+id/et__avroe_stdmarathisub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_45sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="English :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avroe_stdmenglishsub"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:layout_below="@id/tv__avroe_stdmenglishsub"
+                        android:fontFamily="sans-serif-black"
+                        android:text="XXX"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_45sdp"
+                        android:drawablePadding="@dimen/_10sdp" />
+
+
+                    <TextView
+                        android:id="@+id/tv__avroe_stdmath"
+                        android:layout_below="@+id/et__avroe_stdmarathisub"
+                        android:layout_toRightOf="@+id/et__avroe_stdmenglishsub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="Math :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avroe_stdmath"
+                        android:layout_toRightOf="@+id/et__avroe_stdmenglishsub"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:layout_below="@id/tv__avroe_stdmath"
+                        android:fontFamily="sans-serif-black"
+                        android:text="XXX"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_40sdp"
+                        android:drawablePadding="@dimen/_10sdp" />
+
+
+                    <TextView
+                        android:id="@+id/tv__avroe_stdsciencesub"
+                        android:layout_below="@+id/et__avroe_stdmenglishsub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_45sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="Science :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avroe_stdsciencesub"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:layout_below="@id/tv__avroe_stdsciencesub"
+                        android:fontFamily="sans-serif-black"
+                        android:text="XXX"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_45sdp"
+                        android:drawablePadding="@dimen/_10sdp" />
+                    <TextView
+                        android:id="@+id/tv__avroe_stdhiostrygeocivies"
+                        android:layout_below="@+id/et__avroe_stdsciencesub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_45sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="Hiostry Geography And Civies:"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avroe_stdhiostrygeocivies"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:layout_below="@id/tv__avroe_stdhiostrygeocivies"
+                        android:fontFamily="sans-serif-black"
+                        android:text="XXX"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_45sdp"
+                        android:drawablePadding="@dimen/_10sdp" />
+                    <ImageView
+                        android:layout_width="@dimen/_430sdp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__avroe_img2"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_below="@+id/et__avroe_stdhiostrygeocivies"
+                        android:src="@drawable/division_line" />
+
+                    <TextView
+                        android:id="@+id/tv__avroe_stdyeartotal"
+                        android:layout_below="@+id/img__avroe_img2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:text="Year Total :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avroe_stdyeartotal"
+                        android:layout_below="@+id/img__avroe_img2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv__avroe_stdyeartotal"
+                        android:fontFamily="sans-serif-black"
+                        android:text="xxxxxxxxx"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:drawablePadding="@dimen/_10sdp"/>
+
+                    <TextView
+                        android:id="@+id/tv__avroe_stdpercentage"
+                        android:layout_below="@+id/tv__avroe_stdyeartotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:text="Percentag :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avroe_stdpercentage"
+                        android:layout_below="@+id/tv__avroe_stdyeartotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv__avroe_stdpercentage"
+                        android:fontFamily="sans-serif-black"
+                        android:text="xxxxxxxxx"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:drawablePadding="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/tv__avroe_stdfinalcategory"
+                        android:layout_below="@+id/tv__avroe_stdpercentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:text="Final Category :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avroe_stdfinalcategory"
+                        android:layout_below="@+id/tv__avroe_stdpercentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv__avroe_stdfinalcategory"
+                        android:fontFamily="sans-serif-black"
+                        android:text="xxxxxxxxx"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:drawablePadding="@dimen/_10sdp"/>
+                    <ImageView
+                        android:layout_width="@dimen/_430sdp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__avroe_img4"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_below="@+id/tv__avroe_stdfinalcategory"
+                        android:src="@drawable/division_line" />
+                    <TextView
+                        android:id="@+id/tv__avroe_stdphyscailedusub"
+                        android:layout_below="@+id/img__avroe_img4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:text="Physcial And Health Education:"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avroe_stdphyscailedusub"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:layout_below="@id/tv__avroe_stdphyscailedusub"
+                        android:fontFamily="sans-serif-black"
+                        android:text="XXX"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:drawablePadding="@dimen/_10sdp" />
+                    <TextView
+                        android:id="@+id/tv__avroe_stdworkexp"
+                        android:layout_below="@+id/et__avroe_stdphyscailedusub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:text="Work Expirence :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avroe_stdworkexp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:layout_below="@id/tv__avroe_stdworkexp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="XXX"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:drawablePadding="@dimen/_10sdp" />
+                    <TextView
+                        android:id="@+id/tv__avroe_stdart"
+                        android:layout_below="@+id/et__avroe_stdworkexp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:text="Art :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avroe_stdart"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:layout_below="@id/tv__avroe_stdart"
+                        android:fontFamily="sans-serif-black"
+                        android:text="XXX"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:drawablePadding="@dimen/_10sdp"/>
+                    <ImageView
+                        android:layout_width="@dimen/_430sdp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__avroe_img6"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_below="@+id/et__avroe_stdart"
+                        android:src="@drawable/division_line" />
+
+                    <TextView
+                        android:id="@+id/tv__avroe_stdgradee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img__avroe_img6"
+                        android:fontFamily="@font/f1"
+                        android:text="Grade :"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:drawablePadding="@dimen/_10sdp"/>
+
+                    <EditText
+                        android:id="@+id/et__avroe_stdgradee"
+                        android:layout_below="@+id/img__avroe_img6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv__avroe_stdyeartotal"
+                        android:fontFamily="sans-serif-black"
+                        android:text="xxxxxxxxx"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:drawablePadding="@dimen/_10sdp" />
+                    <TextView
+                        android:id="@+id/tv__avroe_stdyearpresent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv__avroe_stdgradee"
+                        android:fontFamily="@font/f1"
+                        android:text="Year Presnty:"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:drawablePadding="@dimen/_10sdp" />
+
+                    <EditText
+                        android:id="@+id/et__avroe_stdyearpresent"
+                        android:layout_below="@+id/tv__avroe_stdgradee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv__avroe_stdyearpresent"
+                        android:fontFamily="sans-serif-black"
+                        android:text="xxxxxxxxx"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:drawablePadding="@dimen/_10sdp" />
+                    <TextView
+                        android:id="@+id/tv__avroe_stdreuslt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv__avroe_stdyearpresent"
+                        android:fontFamily="@font/f1"
+                        android:text="Result:"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:drawablePadding="@dimen/_10sdp" />
+
+                    <EditText
+                        android:id="@+id/et__avroe_stdreuslt"
+                        android:layout_below="@+id/tv__avroe_stdyearpresent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv__avroe_stdreuslt"
+                        android:fontFamily="sans-serif-black"
+                        android:text="xxxxxxxxx"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:drawablePadding="@dimen/_10sdp" />
+                    <ImageView
+                        android:layout_width="@dimen/_430sdp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__avroe_img9"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_below="@+id/tv__avroe_stdreuslt"
+                        android:src="@drawable/division_line" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <Button
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn__avron_update_eightreuslt"
+                android:layout_below="@id/view_eightstudent_card"
+                android:text="Update"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/f1"
+                android:backgroundTint="@color/primaryColor"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/_20sdp"
+                />
+            <Button
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn__avron_delete_eightreuslt"
+                android:layout_below="@id/view_eightstudent_card"
+                android:text="Delete"
+                android:fontFamily="@font/f1"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:backgroundTint="@color/primaryColor"
+                android:layout_alignParentRight="true"
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

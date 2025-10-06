@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeacherModule.ResultModule.NineClass.View_Result_of_nine_Activity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_top_heading_studenticard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Nine Class Result"
+                android:textStyle="bold"
+                android:fontFamily="@font/playfairdisplayvariablefontwght"
+                android:textColor="@color/primaryColor"
+                android:textSize="30dp" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pdf"
+                android:src="@drawable/baseline_print_24"
+                android:layout_toRightOf="@id/tv_top_heading_studenticard"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_70sdp"/>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/view_ninestudent_card"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/tv_top_heading_studenticard"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv__avron_stdadharno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/f1"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="18dp"
+                    android:text="Adhar No. :"
+                    />
+
+                <EditText
+                    android:id="@+id/et__avron_stdadharno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15dp"
+                    android:layout_toRightOf="@id/tv__avron_stdadharno"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="xxxxxxxxx"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tv__avron_stdgenralno"
+                        android:layout_below="@+id/tv__avron_stdadharno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp"
+                        android:text="Genral No. :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avron_stdgenralno"
+                        android:layout_below="@+id/tv__avron_stdadharno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="15dp"
+                        android:layout_toRightOf="@id/tv__avron_stdgenralno"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="xxxxxxxxx"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tv__avron_stdname"
+                        android:layout_below="@+id/tv__avron_stdgenralno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp"
+                        android:text="Student Name :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avron_stdname"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__avron_stdname"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Abhishek Manohar Ghayal"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:id="@+id/tv__avron_stdstandard"
+                        android:layout_below="@+id/et__avron_stdname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp"
+                        android:text="Standard:"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avron_stdstandard"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__avron_stdstandard"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="XXX"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp" />
+                    <ImageView
+                        android:layout_width="450dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__avron_img1"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/et__avron_stdstandard"
+                        android:src="@drawable/division_line" />
+                    <TextView
+                        android:id="@+id/tv__avron_stdtitle"
+                        android:layout_below="@+id/img__avron_img1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="1dp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp"
+                        android:text="Student Result As Per Subject:"
+                        />
+                    <TextView
+                        android:id="@+id/tv__avron_stdmarathisub"
+                        android:layout_below="@+id/tv__avron_stdtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp"
+                        android:text="Marathi :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avron_stdmarathisub"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__avron_stdmarathisub"
+                        android:layout_marginLeft="60dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="XXX"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:id="@+id/tv__avron_stdhindisub"
+                        android:layout_below="@+id/tv__avron_stdtitle"
+                        android:layout_toRightOf="@+id/tv__avron_stdmarathisub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp"
+                        android:text="Hindi :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avron_stdhindisub"
+                        android:layout_toRightOf="@+id/et__avron_stdmarathisub"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__avron_stdhindisub"
+                        android:layout_marginLeft="44dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="XXX"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tv__avron_stdmenglishsub"
+                        android:layout_below="@+id/et__avron_stdmarathisub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp"
+                        android:text="English :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avron_stdmenglishsub"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__avron_stdmenglishsub"
+                        android:layout_marginLeft="60dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="XXX"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp" />
+
+
+                    <TextView
+                        android:id="@+id/tv__avron_stdmath"
+                        android:layout_below="@+id/et__avron_stdmarathisub"
+                        android:layout_toRightOf="@+id/et__avron_stdmenglishsub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="44dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp"
+                        android:text="Math Part I  II :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avron_stdmath"
+                        android:layout_toRightOf="@+id/et__avron_stdmenglishsub"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__avron_stdmath"
+                        android:layout_marginLeft="44dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="XXX"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp" />
+
+
+                    <TextView
+                        android:id="@+id/tv__avron_stdsciencesub"
+                        android:layout_below="@+id/et__avron_stdmenglishsub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp"
+                        android:text="Science Part I II :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avron_stdsciencesub"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__avron_stdsciencesub"
+                        android:layout_marginLeft="60dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="XXX"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:id="@+id/tv__avron_stdsocialscienesub"
+                        android:layout_below="@+id/et__avron_stdsciencesub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp"
+                        android:text="Socail Science Part I and II :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avron_stdsocialscienesub"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__avron_stdsocialscienesub"
+                        android:layout_marginLeft="60dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="XXX"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp" />
+                    <ImageView
+                        android:layout_width="450dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__avron_img2"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/et__avron_stdsocialscienesub"
+                        android:src="@drawable/division_line" />
+
+
+
+                    <TextView
+                        android:id="@+id/tv__avron_stdyeartotal"
+                        android:layout_below="@+id/img__avron_img2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp"
+                        android:text="Year Total :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avron_stdyeartotal"
+                        android:layout_below="@+id/img__avron_img2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="15dp"
+                        android:layout_toRightOf="@id/tv__avron_stdyeartotal"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="xxxxxxxxx"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tv__avron_stdpercentage"
+                        android:layout_below="@+id/tv__avron_stdyeartotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp"
+                        android:text="Percentag :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avron_stdpercentage"
+                        android:layout_below="@+id/tv__avron_stdyeartotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="15dp"
+                        android:layout_toRightOf="@id/tv__avron_stdpercentage"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="xxxxxxxxx"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tv__avron_stdfinalcategory"
+                        android:layout_below="@+id/tv__avron_stdpercentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp"
+                        android:text="Final Category :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avron_stdfinalcategory"
+                        android:layout_below="@+id/tv__avron_stdpercentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="15dp"
+                        android:layout_toRightOf="@id/tv__avron_stdfinalcategory"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="xxxxxxxxx"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp" />
+                    <ImageView
+                        android:layout_width="450dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__avron_img4"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/tv__avron_stdfinalcategory"
+                        android:src="@drawable/division_line" />
+                    <TextView
+                        android:id="@+id/tv__avron_stdphyscailedusub"
+                        android:layout_below="@+id/img__avron_img4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp"
+                        android:text="Physcial Education :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avron_stdphyscailedusub"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__avron_stdphyscailedusub"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="XXX"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:id="@+id/tv__avron_stdconservaionsciencesub"
+                        android:layout_below="@+id/et__avron_stdphyscailedusub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp"
+                        android:text="Conservation science :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avron_stdconservaionsciencesub"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__avron_stdconservaionsciencesub"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="XXX"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:id="@+id/tv__avron_stdselfdevelopmentandarticsub"
+                        android:layout_below="@+id/et__avron_stdconservaionsciencesub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp"
+                        android:text="Self-Development And Artistic Application :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avron_stdselfdevelopmentandarticsub"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__avron_stdselfdevelopmentandarticsub"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="XXX"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp" />
+                    <ImageView
+                        android:layout_width="450dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__avron_img6"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/et__avron_stdselfdevelopmentandarticsub"
+                        android:src="@drawable/division_line" />
+
+                    <TextView
+                        android:id="@+id/tv__avron_stdgradee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img__avron_img6"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_toStartOf="@+id/et__avron_stdgradee"
+                        android:fontFamily="@font/f1"
+                        android:text="Grade :"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/et__avron_stdgradee"
+                        android:layout_below="@+id/img__avron_img6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="15dp"
+                        android:layout_toRightOf="@id/tv__avron_stdyeartotal"
+                        android:layout_marginLeft="1dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="xxxxxxxxx"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:id="@+id/tv__avron_stdyearpresent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv__avron_stdgradee"
+                        android:layout_marginTop="10dp"
+                        android:layout_toStartOf="@+id/et__avron_stdgradee"
+                        android:fontFamily="@font/f1"
+                        android:text="Year Presnty:"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/et__avron_stdyearpresent"
+                        android:layout_below="@+id/tv__avron_stdgradee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="15dp"
+                        android:layout_toRightOf="@id/tv__avron_stdyearpresent"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="xxxxxxxxx"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:id="@+id/tv__avron_stdreuslt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv__avron_stdyearpresent"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_toStartOf="@+id/et__avron_stdgradee"
+                        android:fontFamily="@font/f1"
+                        android:text="Result:"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/et__avron_stdreuslt"
+                        android:layout_below="@+id/tv__avron_stdyearpresent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="15dp"
+                        android:layout_toRightOf="@id/tv__avron_stdreuslt"
+                        android:layout_marginLeft="1dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="xxxxxxxxx"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18dp" />
+                    <ImageView
+                        android:layout_width="450dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__avron_img9"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/tv__avron_stdreuslt"
+                        android:src="@drawable/division_line" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn__avron_update_ninereuslt"
+                android:layout_below="@id/view_ninestudent_card"
+                android:text="Update"
+                android:textSize="18dp"
+                android:fontFamily="@font/f1"
+                android:backgroundTint="@color/primaryColor"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="45dp"
+                />
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn__avron_delete_ninereuslt"
+                android:layout_below="@id/view_ninestudent_card"
+                android:text="Delete"
+                android:fontFamily="@font/f1"
+                android:textSize="18dp"
+                android:layout_marginRight="45dp"
+                android:backgroundTint="@color/primaryColor"
+                android:layout_alignParentRight="true"
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

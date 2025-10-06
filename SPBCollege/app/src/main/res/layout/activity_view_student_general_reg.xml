@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ClerkModule.GernalRegister.ViewStudentGeneralRegActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_45sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_top_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:text="General Register"
+                android:textStyle="bold"
+                android:fontFamily="@font/playfairdisplayvariablefontwght"
+                android:textColor="@color/primaryColor"
+                android:textSize="@dimen/_28sdp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/view_genral_studentInfo_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_top_heading"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:elevation="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_13sdp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <TextView
+                        android:id="@+id/tv__acvsgr_admissionno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="General Register No. :"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__acvsgr_admissionno"
+                        android:layout_width="@dimen/_130sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_api_24"
+                        android:layout_below="@id/tv__acvsgr_admissionno"
+                        android:fontFamily="sans-serif-black"
+                        android:text="661"
+                        android:inputType="number"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv__acvsgr_title"
+                        android:text="Full Name Of Student"
+                        android:fontFamily="@font/f1"
+                        android:layout_below="@+id/et__acvsgr_admissionno"
+                        android:textColor="@color/primaryColor"
+                        android:textColorHint="@color/primaryColor"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_10sdp"/>
+                    <ImageView
+                        android:layout_width="@dimen/_430sdp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__acvsgr_div1"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_below="@+id/tv__acvsgr_title"
+                        android:src="@drawable/division_line" />
+                    <TextView
+                        android:id="@+id/tv__acvsgr_studentid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img__acvsgr_div1"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Student Id :"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__acvsgr_studentid"
+                        android:layout_width="@dimen/_170sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_api_24"
+                        android:inputType="number"
+                        android:layout_below="@id/tv__acvsgr_studentid"
+                        android:fontFamily="sans-serif-black"
+                        android:text="2111620085"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_17sdp" />
+                    <TextView
+                        android:id="@+id/tv__acvsgr_studentuid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__acvsgr_studentid"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Student Uid :"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__acvsgr_studentuid"
+                        android:layout_width="@dimen/_170sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_api_24"
+                        android:inputType="number"
+                        android:layout_below="@id/tv__acvsgr_studentuid"
+                        android:fontFamily="sans-serif-black"
+                        android:text="2111620085"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_17sdp" />
+                    <TextView
+                        android:id="@+id/tv__acvsgr_studentsurname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__acvsgr_studentuid"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Student Surname:"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__acvsgr_studentsurname"
+                        android:layout_width="@dimen/_170sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_api_24"
+                        android:layout_below="@id/tv__acvsgr_studentsurname"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Ghayal"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_17sdp" />
+                    <TextView
+                        android:id="@+id/tv__acvsgr_studentname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__acvsgr_studentsurname"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Student Name:"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__acvsgr_studentname"
+                        android:layout_width="@dimen/_170sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_api_24"
+                        android:layout_below="@id/tv__acvsgr_studentname"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Abhishek"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_17sdp" />
+                    <TextView
+                        android:id="@+id/tv__acvsgr_studentparentname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__acvsgr_studentname"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Student Parent Name:"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__acvsgr_studentparentname"
+                        android:layout_width="@dimen/_170sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_api_24"
+                        android:layout_below="@id/tv__acvsgr_studentparentname"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Manohar"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_17sdp" />
+                    <TextView
+                        android:id="@+id/tv__acvsgr_studentmothername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__acvsgr_studentparentname"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Student Mother Name:"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__acvsgr_studentmothername"
+                        android:layout_width="@dimen/_170sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_api_24"
+                        android:layout_below="@id/tv__acvsgr_studentmothername"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Kantabai"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_17sdp" />
+                    <ImageView
+                        android:layout_width="@dimen/_430sdp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__acvsgr_div2"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_below="@+id/et__acvsgr_studentmothername"
+                        android:src="@drawable/division_line" />
+                    <TextView
+                        android:id="@+id/tv__acvsgr_studentnationality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img__acvsgr_div2"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Student Nationality :"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__acvsgr_studentnationality"
+                        android:layout_width="@dimen/_170sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_api_24"
+                        android:layout_below="@id/tv__acvsgr_studentnationality"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Indian"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_17sdp" />
+
+                    <TextView
+                        android:id="@+id/tv__acvsgr_studentmothertung"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__acvsgr_studentnationality"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Student Mothertung :"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__acvsgr_studentmothertung"
+                        android:layout_width="@dimen/_170sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_api_24"
+                        android:layout_below="@id/tv__acvsgr_studentmothertung"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Marathi"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"/>
+                    <TextView
+                        android:id="@+id/tv__acvsgr_studentreligion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__acvsgr_studentmothertung"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Student Religion :"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__acvsgr_studentreligion"
+                        android:layout_width="@dimen/_170sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_api_24"
+                        android:layout_below="@id/tv__acvsgr_studentreligion"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Hindu"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_17sdp" />
+                    <TextView
+                        android:id="@+id/tv__acvsgr_studentcast"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__acvsgr_studentreligion"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Student Cast :"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__acvsgr_studentcast"
+                        android:layout_width="@dimen/_170sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_api_24"
+                        android:layout_below="@id/tv__acvsgr_studentcast"
+                        android:fontFamily="sans-serif-black"
+                        android:text="OBC"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_17sdp" />
+                    <TextView
+                        android:id="@+id/tv__acvsgr_studentsubcast"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__acvsgr_studentcast"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Student Subcast :"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__acvsgr_studentsubcast"
+                        android:layout_width="@dimen/_170sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_api_24"
+                        android:layout_below="@id/tv__acvsgr_studentsubcast"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Mali"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"/>
+                    <ImageView
+                        android:layout_width="@dimen/_430sdp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__acvsgr_div3"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_below="@+id/et__acvsgr_studentsubcast"
+                        android:src="@drawable/division_line" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv__acvsgr_title2"
+                        android:text="Student Birth Place"
+                        android:fontFamily="@font/f1"
+                        android:layout_below="@+id/img__acvsgr_div3"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:textColor="@color/primaryColor"
+                        android:textColorHint="@color/primaryColor"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="@dimen/_16sdp"
+                        />
+                    <ImageView
+                        android:layout_width="@dimen/_430sdp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__acvsgr_div4"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:layout_below="@+id/tv__acvsgr_title2"
+                        android:src="@drawable/division_line" />
+
+
+                    <TextView
+                        android:id="@+id/tv__acvsgr_studentbirthvill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img__acvsgr_div4"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Village :"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__acvsgr_studentbirthvill"
+                        android:layout_width="@dimen/_180sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_api_24"
+                        android:layout_below="@id/tv__acvsgr_studentbirthvill"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Pachod"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"/>
+                    <TextView
+                        android:id="@+id/tv__acvsgr_studentbirthtal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__acvsgr_studentbirthvill"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Taluqa :"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__acvsgr_studentbirthtal"
+                        android:layout_width="@dimen/_180sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_api_24"
+                        android:layout_below="@id/tv__acvsgr_studentbirthtal"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Paithan"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_17sdp" />
+                    <TextView
+                        android:id="@+id/tv__acvsgr_studentbirthdist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__acvsgr_studentbirthtal"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="District :"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__acvsgr_studentbirthdist"
+                        android:layout_width="@dimen/_240sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv__acvsgr_studentbirthdist"
+                        android:drawableLeft="@drawable/baseline_api_24"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Chhatrapati Sambhaji Nagar"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_17sdp" />
+
+                    <TextView
+                        android:id="@+id/tv__acvsgr_studentbirthstate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__acvsgr_studentbirthdist"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="State :"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__acvsgr_studentbirthstate"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_api_24"
+                        android:layout_below="@id/tv__acvsgr_studentbirthstate"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Maharatra"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_17sdp" />
+                    <TextView
+                        android:id="@+id/tv__acvsgr_studentbirthcoun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__acvsgr_studentbirthstate"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Country :"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__acvsgr_studentbirthcoun"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_api_24"
+                        android:layout_below="@id/tv__acvsgr_studentbirthcoun"
+                        android:fontFamily="sans-serif-black"
+                        android:text="India"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_17sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_430sdp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__acvsgr_div5"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_below="@+id/et__acvsgr_studentbirthcoun"
+                        android:src="@drawable/division_line" />
+                    <TextView
+                        android:id="@+id/tv__acvsgr_studentbirthinno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img__acvsgr_div5"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Birth Date In No. :"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__acvsgr_studentbirthinno"
+                        android:layout_width="@dimen/_170sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_api_24"
+                        android:layout_below="@id/tv__acvsgr_studentbirthinno"
+                        android:fontFamily="sans-serif-black"
+                        android:text="20/11/2005"
+                        android:inputType="date"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"/>
+                    <TextView
+                        android:id="@+id/tv__acvsgr_studentbirthinletter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__acvsgr_studentbirthinno"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Birth Date In Letter :"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__acvsgr_studentbirthinletter"
+                        android:layout_width="@dimen/_240sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_api_24"
+                        android:layout_below="@id/tv__acvsgr_studentbirthinletter"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Twitenty Novemer Two Thousand and Five"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_17sdp" />
+                    <TextView
+                        android:id="@+id/tv__acvsgr_studentlastschoolname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__acvsgr_studentbirthinletter"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Last School Name :"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__acvsgr_studentlastschoolname"
+                        android:layout_width="@dimen/_240sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_api_24"
+                        android:layout_below="@id/tv__acvsgr_studentlastschoolname"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Goverment Poly Ambad"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_17sdp" />
+                    <TextView
+                        android:id="@+id/tv__acvsgr_studentlastschoolstd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__acvsgr_studentlastschoolname"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Last School Standard :"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__acvsgr_studentlastschoolstd"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_api_24"
+                        android:layout_below="@id/tv__acvsgr_studentlastschoolstd"
+                        android:fontFamily="sans-serif-black"
+                        android:text="3rd Year"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_17sdp" />
+                    <TextView
+                        android:id="@+id/tv__acvsgr_studentadmissiondate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__acvsgr_studentlastschoolstd"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Last Admission Date :"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__acvsgr_studentadmissiondate"
+                        android:layout_width="@dimen/_170sdp"
+                        android:inputType="date"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_api_24"
+                        android:layout_below="@id/tv__acvsgr_studentadmissiondate"
+                        android:fontFamily="sans-serif-black"
+                        android:text="20/2/2024"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/_430sdp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__acvsgr_div6"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_below="@+id/et__acvsgr_studentadmissiondate"
+                        android:src="@drawable/division_line" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv__acvsgr_title3"
+                        android:text="In Which Grade And Since \nWhen Was He Studying"
+                        android:fontFamily="@font/f1"
+                        android:layout_below="@+id/img__acvsgr_div6"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:textColor="@color/primaryColor"
+                        android:textColorHint="@color/primaryColor"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="@dimen/_16sdp"/>
+                    <ImageView
+                        android:layout_width="@dimen/_430sdp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__acvsgr_div7"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:layout_below="@+id/tv__acvsgr_title3"
+                        android:src="@drawable/division_line" />
+                    <TextView
+                        android:id="@+id/tv__acvsgr_studentcurrentstd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img__acvsgr_div7"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Student Current Standard :"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__acvsgr_studentcurrentstd"
+                        android:layout_width="@dimen/_170sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_api_24"
+                        android:layout_below="@id/tv__acvsgr_studentcurrentstd"
+                        android:fontFamily="sans-serif-black"
+                        android:text="3rd Year"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_17sdp" />
+                    <TextView
+                        android:id="@+id/tv__acvsgr_studentcurrentdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__acvsgr_studentcurrentstd"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Current Admission Date :"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__acvsgr_studentcurrentdate"
+                        android:layout_width="@dimen/_170sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_api_24"
+                        android:layout_below="@id/tv__acvsgr_studentcurrentdate"
+                        android:fontFamily="sans-serif-black"
+                        android:text="20/2/2024"
+                        android:inputType="date"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_17sdp" />
+                    <TextView
+                        android:id="@+id/tv__acvsgr_studentprogressinstudy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__acvsgr_studentcurrentdate"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Progress In Study :"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__acvsgr_studentprogressinstudy"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_api_24"
+                        android:layout_below="@id/tv__acvsgr_studentprogressinstudy"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Excellent"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_17sdp" />
+                    <TextView
+                        android:id="@+id/tv__acvsgr_studentprogress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__acvsgr_studentprogressinstudy"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Student Progress :"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__acvsgr_studentprogress"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_api_24"
+                        android:layout_below="@id/tv__acvsgr_studentprogress"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Excellent"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_17sdp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/view_genral_update_genaral_btn"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_genral_studentInfo_card"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/_34sdp"
+                android:layout_marginBottom="@dimen/_70sdp"
+                android:backgroundTint="@color/primaryColor"
+                android:text="Update" />
+
+            <Button
+                android:id="@+id/view_genral_delete_genaral_btn"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_genral_studentInfo_card"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_34sdp"
+                android:layout_marginBottom="@dimen/_70sdp"
+                android:backgroundTint="@color/primaryColor"
+                android:text="Delete" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</FrameLayout>

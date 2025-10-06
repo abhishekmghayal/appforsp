@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="miniroity_item">
+        <item>Select the Cast</item>
+        <item>Muslims</item>
+        <item>Sikhs</item>
+        <item>Christians</item>
+        <item>Buddhists</item>
+        <item>Parsis</item>
+        <item>Jains</item>
+    </string-array>
+</resources>

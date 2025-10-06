@@ -1,0 +1,1054 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ClerkModule.Admission.ViewData.ActivityVIewStudentAdmissionForm">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_top_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:text="Admission Form"
+                android:textStyle="bold"
+                android:fontFamily="@font/playfairdisplayvariablefontwght"
+                android:textColor="@color/primaryColor"
+                android:textSize="@dimen/_28sdp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_print_24"
+                android:id="@+id/btn_fetch_from_gen_reg"
+                android:layout_toRightOf="@id/tv_top_heading"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_45sdp"
+                android:layout_alignParentRight="true"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/view_admission_studentInfo_card"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/tv_top_heading"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_8sdp"
+                android:elevation="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_10sdp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv__fvsaf_studentinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:hint="All Inforamtion \nOf Student "
+                        android:inputType="text"
+                        android:fontFamily="@font/f1"
+                        android:padding="@dimen/_2sdp"
+                        android:textColor="@color/primaryColor"
+                        android:textColorHint="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:layout_width="@dimen/_170sdp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__fvsaf_div__image1"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_below="@+id/tv__fvsaf_studentinfo"
+                        android:src="@drawable/division_line" />
+                    <RelativeLayout
+                        android:layout_width="@dimen/_110sdp"
+                        android:layout_height="@dimen/_110sdp"
+                        android:layout_marginLeft="@dimen/_190sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:id="@+id/profile_layout"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_100sdp"
+                            android:layout_centerHorizontal="true"
+                            app:cardCornerRadius="@dimen/_220sdp"
+                            app:cardBackgroundColor="@color/white">
+
+                            <ImageView
+                                android:id="@+id/student_photo"
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="@dimen/_100sdp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/profile_icon" />
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/tv__fvsaf_admissionclass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admission Class :"
+                        android:layout_below="@+id/img__fvsaf_div__image1"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvsaf_admissionclass"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvsaf_admissionclass"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/tv__fvsaf_admissionno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__fvsaf_admissionclass"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Admission No.:"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvsaf_admissionno"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvsaf_admissionno"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv__fvsaf_admissiondate"
+                        android:layout_toRightOf="@+id/tv__fvsaf_admissionno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__fvsaf_admissionclass"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_19sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Admission Date:"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvsaf_admissiondate"
+                        android:layout_toRightOf="@+id/et__fvsaf_admissionno"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvsaf_admissiondate"
+                        android:layout_marginLeft="77dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/tv__fvsaf_admissionsuid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__fvsaf_admissionno"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Student UID :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvsaf_admissionsuid"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvsaf_admissionsuid"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv__fvsaf_admissionsadharno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__fvsaf_admissionno"
+                        android:layout_toRightOf="@+id/tv__fvsaf_admissionsuid"
+                        android:fontFamily="@font/f1"
+                        android:text="Adhar No. :"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_34sdp"
+                        android:layout_marginTop="@dimen/_8sdp" />
+
+                    <EditText
+                        android:id="@+id/et__fvsaf_admissionsadharno"
+                        android:layout_toRightOf="@+id/et__fvsaf_admissionsuid"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvsaf_admissionsadharno"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="xxxxxxxxxxxxx"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <ImageView
+                        android:layout_width="@dimen/_430sdp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__fvsaf_div__image2"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_below="@+id/et__fvsaf_admissionsuid"
+                        android:src="@drawable/division_line" />
+
+                    <TextView
+                        android:id="@+id/tv__fvsaf_studentpersonalinfo"
+                        android:layout_below="@+id/img__fvsaf_div__image2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Stduent Section"
+                        android:inputType="text"
+                        android:fontFamily="@font/f1"
+                        android:padding="@dimen/_3sdp"
+                        android:textColorHint="@color/primaryColor"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                         />
+                    <ImageView
+                        android:layout_width="@dimen/_430sdp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__fvsaf_div__image3"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_below="@+id/tv__fvsaf_studentpersonalinfo"
+                        android:src="@drawable/division_line" />
+                    <TextView
+                        android:id="@+id/tv__fvsaf_admissionstdname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img__fvsaf_div__image3"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Full Name Of Student :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvsaf_admissionstdname"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvsaf_admissionstdname"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/tv__fvsaf_admissionstdmothername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__fvsaf_admissionstdname"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Complete Name Of Mother :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvsaf_admissionstdmothername"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvsaf_admissionstdmothername"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <ImageView
+                        android:layout_width="@dimen/_430sdp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__fvsaf_div__image5"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_below="@+id/et__fvsaf_admissionstdmothername"
+                        android:src="@drawable/division_line" />
+                    <TextView
+                        android:id="@+id/tv__fvsaf_admissionstdcast"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img__fvsaf_div__image5"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Cast :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvsaf_admissionstdcast"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvsaf_admissionstdcast"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/tv__fvsaf_admissionstdreligion"
+                        android:layout_toRightOf="@+id/tv__fvsaf_admissionstdcast"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img__fvsaf_div__image5"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_95sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Religion :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvsaf_admissionstdreligion"
+                        android:layout_toRightOf="@+id/et__fvsaf_admissionstdcast"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvsaf_admissionstdreligion"
+                        android:layout_marginLeft="50dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/tv__fvsaf_admissionstdbirthplace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__fvsaf_admissionstdcast"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Birth Place :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvsaf_admissionstdbirthplace"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvsaf_admissionstdbirthplace"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/tv__fvsaf_admissionstdbirthdate"
+                        android:layout_toRightOf="@+id/tv__fvsaf_admissionstdbirthplace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__fvsaf_admissionstdcast"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Birth Date :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvsaf_admissionstdbirthdate"
+                        android:layout_toRightOf="@+id/et__fvsaf_admissionstdbirthplace"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvsaf_admissionstdbirthdate"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/tv__fvsaf_admissionstdbirthdateinletter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__fvsaf_admissionstdbirthplace"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Birth Date In Letter :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvsaf_admissionstdbirthdateinletter"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvsaf_admissionstdbirthdateinletter"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/tv__fvsaf_admissionstdage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__fvsaf_admissionstdbirthdateinletter"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Age :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvsaf_admissionstdage"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvsaf_admissionstdage"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/tv__fvsaf_admissionstdgender"
+                        android:layout_toRightOf="@+id/tv__fvsaf_admissionstdage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__fvsaf_admissionstdbirthdateinletter"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_110sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Gender :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvsaf_admissionstdgender"
+                        android:layout_toRightOf="@+id/et__fvsaf_admissionstdage"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvsaf_admissionstdgender"
+                        android:layout_marginLeft="@dimen/_57sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/tv__fvsaf_admissionstdmothertung"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__fvsaf_admissionstdage"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Mother Tung :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvsaf_admissionstdmothertung"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvsaf_admissionstdmothertung"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <ImageView
+                        android:layout_width="@dimen/_430sdp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__fvsaf_div__image8"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_below="@+id/et__fvsaf_admissionstdmothertung"
+                        android:src="@drawable/division_line" />
+                    <TextView
+                        android:id="@+id/tv__fvsaf_admissionstdclasspassed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img__fvsaf_div__image8"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Class Passed :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvsaf_admissionstdclasspassed"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvsaf_admissionstdclasspassed"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/tv__fvsaf_admissionstdpassiedgrade"
+                        android:layout_toRightOf="@+id/tv__fvsaf_admissionstdclasspassed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img__fvsaf_div__image8"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Passed Grade:"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvsaf_admissionstdpassiedgrade"
+                        android:layout_toRightOf="@+id/et__fvsaf_admissionstdclasspassed"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvsaf_admissionstdpassiedgrade"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/tv__fvsaf_admissionstdlastschoolname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__fvsaf_admissionstdclasspassed"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Last School Name:"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvsaf_admissionstdlastschoolname"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvsaf_admissionstdlastschoolname"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <ImageView
+                        android:layout_width="@dimen/_430sdp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__fvsaf_div__image9"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_below="@+id/et__fvsaf_admissionstdlastschoolname"
+                        android:src="@drawable/division_line" />
+
+                    <TextView
+                        android:id="@+id/tv__fvsaf_studentbankdetail"
+                        android:layout_below="@+id/img__fvsaf_div__image9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Stdudent Bank Details"
+                        android:inputType="text"
+                        android:fontFamily="@font/f1"
+                        android:padding="@dimen/_3sdp"
+                        android:textColorHint="@color/primaryColor"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:layout_width="@dimen/_430sdp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__fvsaf_div__image10"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_below="@+id/tv__fvsaf_studentbankdetail"
+                        android:src="@drawable/division_line" />
+                    <TextView
+                        android:id="@+id/tv__fvsaf_admissionstdbankname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img__fvsaf_div__image10"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Bank Name :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvsaf_admissionstdbankname"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvsaf_admissionstdbankname"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/tv__fvsaf_admissionstdbankifsc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__fvsaf_admissionstdbankname"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Bank IFSC :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvsaf_admissionstdbankifsc"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvsaf_admissionstdbankifsc"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/tv__fvsaf_admissionstdbankaccno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__fvsaf_admissionstdbankifsc"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Bank Account No :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvsaf_admissionstdbankaccno"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvsaf_admissionstdbankaccno"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <ImageView
+                        android:layout_width="@dimen/_430sdp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__fvsaf_div__image11"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_below="@+id/et__fvsaf_admissionstdbankaccno"
+                        android:src="@drawable/division_line" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/view_admission_parentInfo_card"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/view_admission_studentInfo_card"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_8sdp"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv__fvsaf_parentinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:hint="Parent Information "
+                        android:inputType="text"
+                        android:fontFamily="@font/f1"
+                        android:padding="@dimen/_3sdp"
+                        android:textColor="@color/primaryColor"
+                        android:textColorHint="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:layout_width="@dimen/_300sdp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__fvpiaf_div__image1"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_below="@+id/tv__fvsaf_parentinfo"
+                        android:src="@drawable/division_line" />
+
+                    <TextView
+                        android:id="@+id/tv__fvpiaf_admissionprentname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img__fvpiaf_div__image1"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Prent Full Name :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvpiaf_admissionprentname"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvpiaf_admissionprentname"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/tv__fvpiaf_admissionprentrelation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__fvpiaf_admissionprentname"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Prent Relation To Student :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvpiaf_admissionprentrelation"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvpiaf_admissionprentrelation"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/tv__fvpiaf_admissionprentminority"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__fvpiaf_admissionprentrelation"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Minority :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvpiaf_admissionprentminority"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvpiaf_admissionprentminority"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/tv__fvpiaf_admissionprenteconomical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__fvpiaf_admissionprentminority"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Economical Weaker :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvpiaf_admissionprenteconomical"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvpiaf_admissionprenteconomical"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <ImageView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__fvpiaf_div__image2"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_below="@+id/et__fvpiaf_admissionprenteconomical"
+                        android:src="@drawable/division_line" />
+
+                    <TextView
+                        android:id="@+id/tv__fvpiaf_admissionprenttempaddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img__fvpiaf_div__image2"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Tempory Address :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvpiaf_admissionprenttempaddress"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvpiaf_admissionprenttempaddress"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/tv__fvpiaf_admissionprentperaddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__fvpiaf_admissionprenttempaddress"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Permanet Address :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvpiaf_admissionprentperaddress"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvpiaf_admissionprentperaddress"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <ImageView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__fvpiaf_div__image3"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_below="@+id/et__fvpiaf_admissionprentperaddress"
+                        android:src="@drawable/division_line" />
+                    <TextView
+                        android:id="@+id/tv__fvpiaf_admissionprentpernttelphoneno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img__fvpiaf_div__image3"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Telephone No :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvpiaf_admissionprentpernttelphoneno"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvpiaf_admissionprentpernttelphoneno"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/tv__fvpiaf_admissionprentperntmobphoneno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__fvpiaf_admissionprentpernttelphoneno"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Mobile No :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvpiaf_admissionprentperntmobphoneno"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvpiaf_admissionprentperntmobphoneno"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/tv__fvpiaf_admissionprentperntbussiness"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__fvpiaf_admissionprentperntmobphoneno"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Bussiness:"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvpiaf_admissionprentperntbussiness"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvpiaf_admissionprentperntbussiness"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/tv__fvpiaf_admissionprentperntlastyearincome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__fvpiaf_admissionprentperntbussiness"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Last Year Income :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__fvpiaf_admissionprentperntlastyearincome"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_hdr_strong_24"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv__fvpiaf_admissionprentperntlastyearincome"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="12th"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn__fvsaf_update_admission"
+                android:layout_below="@id/view_admission_parentInfo_card"
+                android:text="Update"
+                android:textSize="@dimen/_15sdp"
+                android:fontFamily="@font/f1"
+                android:backgroundTint="@color/primaryColor"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/_35sdp"
+                />
+            <Button
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn__fvsaf_delete_admission"
+                android:layout_below="@id/view_admission_parentInfo_card"
+                android:text="Delete"
+                android:fontFamily="@font/f1"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_185sdp"
+                android:backgroundTint="@color/primaryColor"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>>
+
+</RelativeLayout>

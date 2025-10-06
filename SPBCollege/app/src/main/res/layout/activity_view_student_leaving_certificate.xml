@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClerkModule.LeavingCertificate.ViewStudentLeavingCertificate">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_top_heading_studentleavingcertificate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:text="Student Leaving Certificate"
+                android:textStyle="bold"
+                android:fontFamily="@font/playfairdisplayvariablefontwght"
+                android:textColor="@color/primaryColor"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/_25sdp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/view_leaving_studentcertificate"
+                android:layout_below="@+id/tv_top_heading_studentleavingcertificate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:elevation="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_13sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv__avslc_stdgenralno"
+                        android:text="Genral Register No. :"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_12sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avslc_stdgenralno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv__avslc_stdgenralno"
+                        android:text=""
+                        android:inputType="number"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:drawablePadding="@dimen/_13sdp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv__avslc_stdadharno"
+                        android:layout_below="@+id/et__avslc_stdgenralno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Adhar No. :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avslc_stdadharno"
+                        android:layout_below="@+id/et__avslc_stdgenralno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv__avslc_stdadharno"
+                        android:text="*********"
+                        android:inputType="number"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:drawablePadding="@dimen/_13sdp" />
+                    <ImageView
+                        android:layout_width="@dimen/_430sdp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__avslc_img2"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_below="@+id/tv__avslc_stdadharno"
+                        android:src="@drawable/division_line" />
+
+                    <TextView
+                        android:id="@+id/tv__avslc_stdname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img__avslc_img2"
+                        android:text="Name Of Student :"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_12sdp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avslc_stdname"
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_workspaces_24"
+                        android:layout_below="@id/tv__avslc_stdname"
+                        android:text=""
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_14sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:drawablePadding="@dimen/_13sdp" />
+
+                    <TextView
+                        android:id="@+id/tv__avslc_stdmothername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__avslc_stdname"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Name Of Student's Mother :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avslc_stdmothername"
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_workspaces_24"
+                        android:layout_below="@id/tv__avslc_stdmothername"
+                        android:text=""
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_14sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:drawablePadding="@dimen/_13sdp" />
+
+                    <TextView
+                        android:id="@+id/tv__avslc_stdnationality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__avslc_stdmothername"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Nationality :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avslc_stdnationality"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_workspaces_24"
+                        android:layout_below="@id/tv__avslc_stdnationality"
+                        android:text=""
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_32sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:drawablePadding="@dimen/_13sdp" />
+                    <TextView
+                        android:id="@+id/tv__avslc_stdmothertung"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__avslc_stdmothername"
+                        android:layout_toRightOf="@+id/tv__avslc_stdnationality"
+                        android:layout_marginLeft="@dimen/_60sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="MotherTung :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avslc_stdmothertung"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_workspaces_24"
+                        android:layout_below="@id/tv__avslc_stdnationality"
+                        android:layout_toRightOf="@+id/tv__avslc_stdnationality"
+                        android:text=""
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_75sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:drawablePadding="@dimen/_13sdp" />
+
+                    <TextView
+                        android:id="@+id/tv__avslc_stdreligion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__avslc_stdnationality"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Religion :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avslc_stdreligion"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_workspaces_24"
+                        android:layout_below="@id/tv__avslc_stdreligion"
+                        android:text=""
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_32sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:drawablePadding="@dimen/_13sdp"/>
+                    <TextView
+                        android:id="@+id/tv__avslc_stdcast"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__avslc_stdnationality"
+                        android:layout_toRightOf="@+id/tv__avslc_stdreligion"
+                        android:layout_marginLeft="@dimen/_81sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Cast :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avslc_stdcast"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_workspaces_24"
+                        android:layout_below="@id/tv__avslc_stdcast"
+                        android:layout_toRightOf="@+id/et__avslc_stdreligion"
+                        android:text=""
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_38sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:drawablePadding="@dimen/_13sdp" />
+
+                    <TextView
+                        android:id="@+id/tv__avslc_stdsubcast"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__avslc_stdreligion"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Subcast :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avslc_stdsubcast"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_workspaces_24"
+                        android:layout_below="@id/tv__avslc_stdsubcast"
+                        android:text=""
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_32sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:drawablePadding="@dimen/_13sdp" />
+                    <ImageView
+                        android:layout_width="@dimen/_430sdp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__avslc_img3"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_below="@+id/et__avslc_stdsubcast"
+                        android:src="@drawable/division_line" />
+                    <TextView
+                        android:id="@+id/tv__avslc_stdtitle1"
+                        android:layout_below="@+id/img__avslc_img3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Birth Place Of Student"
+                        android:textColorHint="@color/primaryColor"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp" />
+                    <TextView
+                        android:id="@+id/tv__avslc_stdbirthvillage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv__avslc_stdtitle1"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Village :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avslc_stdbirthvillage"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_workspaces_24"
+                        android:layout_below="@id/tv__avslc_stdbirthvillage"
+                        android:text=""
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_14sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:drawablePadding="@dimen/_13sdp" />
+                    <TextView
+                        android:id="@+id/tv__avslc_stdbirthtaluqa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__avslc_stdbirthvillage"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Taluqa :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avslc_stdbirthtaluqa"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_workspaces_24"
+                        android:layout_below="@id/tv__avslc_stdbirthtaluqa"
+                        android:text=""
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_14sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:drawablePadding="@dimen/_13sdp" />
+                    <TextView
+                        android:id="@+id/tv__avslc_stdbirthdist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__avslc_stdbirthtaluqa"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="District :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avslc_stdbirthdist"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_workspaces_24"
+                        android:layout_below="@id/tv__avslc_stdbirthdist"
+                        android:text=""
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_14sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:drawablePadding="@dimen/_13sdp"/>
+                    <TextView
+                        android:id="@+id/tv__avslc_stdbirthstate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__avslc_stdbirthdist"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="State :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avslc_stdbirthstate"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_workspaces_24"
+                        android:layout_below="@id/tv__avslc_stdbirthstate"
+                        android:text=""
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_14sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:drawablePadding="@dimen/_13sdp" />
+                    <TextView
+                        android:id="@+id/tv__avslc_stddateofbirth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__avslc_stdbirthstate"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Date Of Birth :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avslc_stddateofbirth"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_workspaces_24"
+                        android:layout_below="@id/tv__avslc_stddateofbirth"
+                        android:text=""
+                        android:inputType="date"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_14sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:drawablePadding="@dimen/_13sdp" />
+                    <TextView
+                        android:id="@+id/tv__avslc_stddateofbirthinletter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__avslc_stddateofbirth"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Date Of Birth In Letter :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avslc_stddateofbirthinletter"
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_workspaces_24"
+                        android:layout_below="@id/tv__avslc_stddateofbirthinletter"
+                        android:text=""
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_14sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:drawablePadding="@dimen/_13sdp" />
+                    <ImageView
+                        android:layout_width="@dimen/_430sdp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img__avslc_img4"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_below="@+id/et__avslc_stddateofbirthinletter"
+                        android:src="@drawable/division_line" />
+                    <TextView
+                        android:id="@+id/tv__avslc_stdtitle2"
+                        android:layout_below="@+id/img__avslc_img4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Student Related"
+                        android:inputType="text"
+                        android:textColorHint="@color/primaryColor"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_15sdp"  />
+                    <TextView
+                        android:id="@+id/tv__avslc_stdlastschoolname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv__avslc_stdtitle2"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Last School Name :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avslc_stdlastschoolname"
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_workspaces_24"
+                        android:layout_below="@id/tv__avslc_stdlastschoolname"
+                        android:text=""
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_14sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:drawablePadding="@dimen/_13sdp" />
+                    <TextView
+                        android:id="@+id/tv__avslc_stdlaststd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__avslc_stdlastschoolname"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Last Standard :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avslc_stdlaststd"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_workspaces_24"
+                        android:layout_below="@id/tv__avslc_stdlaststd"
+                        android:text=""
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_14sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:drawablePadding="@dimen/_13sdp" />
+                    <TextView
+                        android:id="@+id/tv__avslc_stdadissiondate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tv__avslc_stdlaststd"
+                        android:layout_below="@+id/et__avslc_stdlastschoolname"
+                        android:layout_marginLeft="@dimen/_38sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Amission Date:"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avslc_stdadissiondate"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_below="@+id/tv__avslc_stdadissiondate"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_workspaces_24"
+                        android:layout_toRightOf="@+id/et__avslc_stdlaststd"
+                        android:text=""
+                        android:inputType="date"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_14sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:drawablePadding="@dimen/_13sdp" />
+
+                    <TextView
+                        android:id="@+id/tv__avslc_stdaddstd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__avslc_stdlaststd"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Added Standard :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avslc_stdaddstd"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_workspaces_24"
+                        android:layout_below="@id/tv__avslc_stdaddstd"
+                        android:text=""
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_14sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:drawablePadding="@dimen/_13sdp" />
+
+                    <TextView
+                        android:id="@+id/tv__avslc_stdprogressinstydy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tv__avslc_stdaddstd"
+                        android:layout_below="@+id/et__avslc_stdlaststd"
+                        android:layout_marginLeft="@dimen/_24sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Progress In Study :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avslc_stdprogressinstydy"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_below="@+id/tv__avslc_stdprogressinstydy"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_workspaces_24"
+                        android:layout_toRightOf="@+id/et__avslc_stdlaststd"
+                        android:text=""
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_14sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:drawablePadding="@dimen/_13sdp" />
+                    <TextView
+                        android:id="@+id/tv__avslc_stdbheviour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__avslc_stdaddstd"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Behavior :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avslc_stdbheviour"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_workspaces_24"
+                        android:layout_below="@id/tv__avslc_stdbheviour"
+                        android:text=""
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_14sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:drawablePadding="@dimen/_13sdp" />
+
+                    <TextView
+                        android:id="@+id/tv__avslc_stdleavedate"
+                        android:layout_width="wrap_content"
+                        android:layout_toRightOf="@+id/tv__avslc_stdbheviour"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__avslc_stdaddstd"
+                        android:layout_marginLeft="@dimen/_63sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Leave Date :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avslc_stdleavedate"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_toRightOf="@+id/et__avslc_stdbheviour"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_workspaces_24"
+                        android:layout_below="@id/tv__avslc_stdleavedate"
+                        android:text=""
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_14sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:drawablePadding="@dimen/_13sdp" />
+
+
+                    <TextView
+                        android:id="@+id/tv__avslc_stdcurrntclass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__avslc_stdbheviour"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Current Class :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avslc_stdcurrntclass"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_workspaces_24"
+                        android:layout_below="@id/tv__avslc_stdcurrntclass"
+                        android:text=""
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_14sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:drawablePadding="@dimen/_13sdp" />
+
+
+                    <TextView
+                        android:id="@+id/tv__avslc_stdholongsudy"
+                        android:layout_toRightOf="@+id/tv__avslc_stdcurrntclass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__avslc_stdbheviour"
+                        android:layout_marginLeft="@dimen/_34sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="How Long Studying :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avslc_stdholongsudy"
+                        android:layout_toRightOf="@+id/et__avslc_stdcurrntclass"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_workspaces_24"
+                        android:layout_below="@id/tv__avslc_stdholongsudy"
+                        android:text=""
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_14sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:drawablePadding="@dimen/_13sdp" />
+
+                    <TextView
+                        android:id="@+id/tv__avslc_stdreasonofleaving"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__avslc_stdcurrntclass"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Reason Of Leaving The School :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avslc_stdreasonofleaving"
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_workspaces_24"
+                        android:layout_below="@id/tv__avslc_stdreasonofleaving"
+                        android:text=""
+                        android:lines="3"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_14sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:drawablePadding="@dimen/_13sdp" />
+
+                    <TextView
+                        android:id="@+id/tv__avslc_stdgrade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et__avslc_stdreasonofleaving"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/f1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Grade :"
+                        />
+
+                    <EditText
+                        android:id="@+id/et__avslc_stdgrade"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_workspaces_24"
+                        android:layout_below="@id/tv__avslc_stdgrade"
+                        android:text=""
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginLeft="@dimen/_14sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:drawablePadding="@dimen/_13sdp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <Button
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn__avslc_print_leavingcertificate"
+                android:layout_below="@id/view_leaving_studentcertificate"
+                android:text="Print"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/f1"
+                android:backgroundTint="@color/primaryColor"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/_30sdp"
+                />
+            <Button
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn__avslc_delete_leavingcertificate"
+                android:layout_below="@id/view_leaving_studentcertificate"
+                android:text="Delete"
+                android:fontFamily="@font/f1"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:backgroundTint="@color/primaryColor"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/_10sdp"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

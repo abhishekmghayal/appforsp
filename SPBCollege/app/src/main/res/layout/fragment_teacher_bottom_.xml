@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="670dp"
+        tools:context=".TeacherModule.TeacherBottomFragment">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_remove_sheet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"/>
+
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/icon_teacher"
+        android:id="@+id/teacher_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teacher Login"
+            android:textColor="@color/primaryColor"
+            android:fontFamily="sans-serif-black"
+            android:textSize="30dp"
+            android:layout_margin="25dp"
+            android:id="@+id/tv_login_heading"
+            android:layout_below="@id/teacher_logo"
+            android:layout_centerHorizontal="true"
+            />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_username_teacher"
+        android:layout_below="@id/tv_login_heading"
+        android:hint="Username"
+        android:textColor="@color/primaryColor"
+        android:textColorHint="@color/primaryColor"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:padding="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/et_rounded_corner"
+        android:drawableStart="@drawable/icon_person"
+        android:drawablePadding="8dp"
+        android:inputType="text"/>
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_password_teacher"
+        android:layout_below="@id/et_username_teacher"
+        android:hint="Password"
+        android:textSize="20sp"
+        android:textColor="@color/primaryColor"
+        android:textColorHint="@color/primaryColor"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/et_rounded_corner"
+        android:drawableStart="@drawable/icon_lock"
+        android:drawablePadding="8dp"
+        android:inputType="textPassword"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Password"
+        android:id="@+id/chk_pass_show_teacher"
+        android:textColor="@color/primaryColor"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="15dp"
+        android:textColorHint="@color/primaryColor"
+        android:layout_below="@id/et_password_teacher"
+        android:backgroundTint="@color/primaryColor"
+        android:buttonTint="@color/primaryColor"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_teacher_login"
+        android:text="Login"
+        android:layout_below="@id/chk_pass_show_teacher"
+        android:textColor="@color/secondaryColor"
+        android:background="@drawable/btn_shape"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginBottom="30dp"
+        />
+    </RelativeLayout>

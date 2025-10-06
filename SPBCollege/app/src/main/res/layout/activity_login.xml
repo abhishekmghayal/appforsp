@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:id="@+id/heading_layout"
+        android:background="@drawable/shape"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-25dp"
+        android:elevation="50dp"
+        >
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true"
+            android:elevation="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/app_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clg_name"
+            android:text="S. P. Bakliwal Vidhyalay"
+            android:layout_below="@id/app_logo"
+            android:textColor="@color/secondaryColor"
+            android:fontFamily="sans-serif-black"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-15dp"/>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_principle"
+        android:text="PRINCIPAL"
+        android:layout_below="@id/heading_layout"
+        android:textColor="@color/secondaryColor"
+        android:background="@drawable/btn_shape"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+
+        android:layout_marginTop="60dp"
+        android:textSize="24dp"
+        android:fontFamily="sans-serif-black" />
+
+    <Button
+        android:id="@+id/btn_clerk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_principle"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/btn_shape"
+        android:fontFamily="sans-serif-black"
+        android:text="CLERK"
+        android:textColor="@color/secondaryColor"
+        android:textSize="24dp"
+        />
+    <Button
+        android:id="@+id/btn_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_clerk"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/btn_shape"
+        android:fontFamily="sans-serif-black"
+        android:text="TEACHER"
+        android:textColor="@color/secondaryColor"
+        android:textSize="24dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_sloggan"
+        android:text="|| तेजोमय प्रकाशासारखे ज्ञानाने फुलवू या ||"
+        android:layout_below="@id/btn_teacher"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:textSize="20dp"
+        android:textColor="@color/primaryColor"
+        android:fontFamily="sans-serif-black"/>
+
+</RelativeLayout>

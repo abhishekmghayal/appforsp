@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_list_layout"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="6dp"
+        android:layout_margin="4dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/rcy_staff_image"
+        android:src="@drawable/icon_clerk"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_rcy_staff_name"
+            android:layout_toRightOf="@id/rcy_staff_image"
+            android:text="Staff 1"
+            android:layout_marginLeft="28dp"
+            android:textColor="@color/primaryColor"
+            android:textSize="23dp"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginTop="9dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_rcy_staff_id"
+                android:text="staff 1"
+                android:layout_toRightOf="@id/rcy_staff_image"
+                android:layout_marginLeft="28dp"
+                android:textColor="@color/primaryColor"
+                android:layout_below="@id/tv_rcy_staff_name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_rcy_request_date_from"
+                android:text="01/01/2024"
+                android:layout_below="@id/tv_rcy_staff_id"
+                android:layout_toRightOf="@id/rcy_staff_image"
+                android:layout_marginLeft="28dp"
+                android:textColor="@color/primaryColor"
+               />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_rcy_request_date_to"
+                android:text="01/01/2024"
+                android:layout_below="@id/tv_rcy_request_date_from"
+                android:layout_toRightOf="@id/rcy_staff_image"
+                android:layout_marginLeft="28dp"
+                android:textColor="@color/primaryColor"
+                android:layout_marginBottom="5dp"
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

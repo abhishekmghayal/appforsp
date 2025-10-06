@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "763660572109",
+    "project_id": "fir-p-b-college-project",
+    "storage_bucket": "fir-p-b-college-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763660572109:android:1ef08057d6153c00e4e084",
+        "android_client_info": {
+          "package_name": "com.rahul.spbcollegeduplicate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtpaPB_QHpmAXb5FRyx8hR7LvyWUjfhVg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

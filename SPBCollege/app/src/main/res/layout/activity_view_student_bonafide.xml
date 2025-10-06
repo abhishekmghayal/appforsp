@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClerkModule.Bonafide.ViewBonafideActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+<!--            <ImageView-->
+<!--                android:id="@+id/img1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginLeft="-20dp"-->
+<!--                android:layout_marginTop="-660dp"-->
+<!--                android:layout_marginRight="-275dp"-->
+<!--                android:layout_marginBottom="800dp"-->
+<!--                android:src="@drawable/size_shape2" />-->
+
+            <TextView
+                android:id="@+id/tv_top_heading_student_bonafide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/playfairdisplayvariablefontwght"
+                android:text="Student Bonafide"
+                android:textColor="@color/primaryColor"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/view_bonafide_studentInfo_card"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/tv_top_heading_student_bonafide"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_student_name_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp"
+                        android:text="Name Of Student :"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_student_name"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv_student_name_title"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Abhishek Manohar Ghayal"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/tv_student_dob_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_student_name"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp"
+                        android:text="Date Of Birth :"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_student_dob"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv_student_dob_title"
+                        android:fontFamily="sans-serif-black"
+                        android:layout_marginLeft="20dp"
+                        android:text="20/11/2005"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_student_dob_letter_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_student_dob"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp"
+                        android:text="Date Of Birth In Letter :"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_student_dob_letter"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv_student_dob_letter_title"
+                        android:fontFamily="sans-serif-black"
+                        android:layout_marginLeft="20dp"
+                        android:text="Tweently Novemeber Two Thousand Five"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+
+
+
+                    <TextView
+                        android:id="@+id/tv_student_learning_year_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_student_dob_letter"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp"
+                        android:text="Learning Year :"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_student_learning_year"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv_student_learning_year_title"
+                        android:fontFamily="sans-serif-black"
+                        android:layout_marginLeft="20dp"
+                        android:text="2023-24"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_student_cast_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_student_learning_year"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp"
+                        android:text="Cast  :"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_student_cast"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv_student_cast_title"
+                        android:fontFamily="sans-serif-black"
+                        android:layout_marginLeft="20dp"
+                        android:text="OBC"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_student_standard_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_student_cast"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp"
+                        android:text="Standard :"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_student_standard"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv_student_standard_title"
+                        android:fontFamily="sans-serif-black"
+                        android:layout_marginLeft="20dp"
+                        android:text="3rd year"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_student_birth_place_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_student_standard"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp"
+                        android:text="Birth Place :"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_student_birth_place"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_person_name"
+                        android:drawablePadding="15dp"
+                        android:layout_below="@id/tv_student_birth_place_title"
+                        android:fontFamily="sans-serif-black"
+                        android:layout_marginLeft="20dp"
+                        android:text="At Post Pachod Tal.Paithan Dist.Chhatrapti Sambhaji Nagar"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="20dp"
+                        android:layout_marginBottom="5dp"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_bonafide_delete_bonafide_btn"
+                android:layout_below="@id/view_bonafide_studentInfo_card"
+                android:text="Delete"
+                android:backgroundTint="@color/primaryColor"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="45dp"
+                android:layout_marginBottom="10dp"
+                />
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_bonafide_print_bonafide_btn"
+                android:layout_below="@id/view_bonafide_studentInfo_card"
+                android:text="Print"
+                android:layout_marginRight="45dp"
+                android:backgroundTint="@color/primaryColor"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_general_register"
+    tools:context=".ClerkModule.GernalRegister.GeneralRegisterActivity">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_view_genral_register"
+        android:padding="@dimen/_3sdp"
+        />
+
+    <!--    tools:listitem="@layout/list_card_view"-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_sgr_add"
+        app:fabSize="auto"
+        android:src="@drawable/icon_add"
+        android:tint="@color/white"
+        android:backgroundTint="#F44336"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/_27sdp"
+        android:layout_marginBottom="@dimen/_27sdp"
+        android:background="@drawable/btn_shape"
+        app:shapeAppearance="@style/Widget.MaterialComponents.CircularProgressIndicator"
+        app:backgroundTint="@color/white"
+        />
+</RelativeLayout>

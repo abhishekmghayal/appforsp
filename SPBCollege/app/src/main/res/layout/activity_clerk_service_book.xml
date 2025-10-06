@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrincipalModule.ClerkServiceBookActivity">
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/principal_book_search_clerk_service_book"
+        app:queryHint="Search Principal Service Book"
+        app:iconifiedByDefault="false"
+        android:layout_margin="10dp"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/principal_book_listview_clerk_service_book"
+        android:layout_below="@id/principal_book_search_clerk_service_book"/>
+
+</RelativeLayout>

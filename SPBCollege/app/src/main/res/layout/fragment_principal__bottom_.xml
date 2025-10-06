@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="800dp"
+    tools:context=".PrincipalModule.PrincipalBottomFragment">
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_remove_sheet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-28dp"/>
+
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/admin_icon"
+        android:id="@+id/admin_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Principal Login"
+        android:textColor="@color/primaryColor"
+        android:fontFamily="sans-serif-black"
+        android:textSize="30dp"
+        android:layout_margin="30dp"
+        android:id="@+id/tv_login_heading"
+        android:layout_below="@id/admin_logo"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_username_principal"
+        android:layout_below="@id/tv_login_heading"
+        android:hint="Username"
+        android:textColor="@color/primaryColor"
+        android:textColorHint="@color/primaryColor"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:padding="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/et_rounded_corner"
+        android:drawableStart="@drawable/icon_person"
+        android:drawablePadding="8dp"
+        android:inputType="text"/>
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_password_principal"
+        android:layout_below="@id/et_username_principal"
+        android:hint="Password"
+        android:textSize="20sp"
+        android:textColor="@color/primaryColor"
+        android:textColorHint="@color/primaryColor"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/et_rounded_corner"
+        android:drawableStart="@drawable/icon_lock"
+        android:drawablePadding="8dp"
+        android:inputType="textPassword"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Password"
+        android:id="@+id/chk_pass_show_principal"
+        android:textColor="@color/primaryColor"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="15dp"
+        android:textColorHint="@color/primaryColor"
+        android:layout_below="@id/et_password_principal"
+        android:backgroundTint="@color/primaryColor"
+        android:buttonTint="@color/primaryColor"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_principal_login"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chk_pass_show_principal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/btn_shape"
+        android:fontFamily="sans-serif-black"
+        android:text="Login"
+        android:textColor="@color/secondaryColor"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_register_principal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_principal_login"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Register Principal"
+        android:textColor="@color/primaryColor"
+        android:textSize="17dp" />
+
+</RelativeLayout>
